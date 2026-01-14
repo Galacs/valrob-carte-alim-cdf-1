@@ -490,6 +490,14 @@
     [
       "1e5e9d25-7b17-450b-be0c-a1c8745b97c8",
       "Efuse 5V 5A 2"
+    ],
+    [
+      "a7541f7c-679e-41f8-9efa-18ff84fb26c0",
+      "Efuse 12V 5A 1"
+    ],
+    [
+      "897efccf-9ba0-4cd0-920a-43d7da1c794b",
+      "Efuse 12V 5A 2"
     ]
   ],
   "text_variables": {}

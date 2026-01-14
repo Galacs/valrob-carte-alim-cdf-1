@@ -376,7 +376,7 @@
 	)
 	(text "5V 5A logic 2"
 		(exclude_from_sim no)
-		(at 164.084 125.984 0)
+		(at 132.334 75.184 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -384,9 +384,29 @@
 		)
 		(uuid "3664ee58-fed2-4335-9bb8-d0b59c7a6783")
 	)
+	(text "12V 5A logic 2"
+		(exclude_from_sim no)
+		(at 132.588 118.364 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3c113eb7-2bc8-4b26-a95a-f6fd1be4ba49")
+	)
+	(text "12V 5A logic 1"
+		(exclude_from_sim no)
+		(at 132.334 97.028 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "49217109-252f-4a3f-9ef0-4d3c2920d79a")
+	)
 	(text "5V 5A logic 1"
 		(exclude_from_sim no)
-		(at 164.084 112.014 0)
+		(at 132.334 49.022 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -394,9 +414,145 @@
 		)
 		(uuid "fa7ffe2a-a84c-4ef4-9c60-cdc499368bb2")
 	)
+	(junction
+		(at 130.81 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c05fe63-f29a-4b65-bbc2-9fbbb7451313")
+	)
+	(junction
+		(at 130.81 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15a4a964-e05b-47bd-8520-6a43173e9021")
+	)
+	(junction
+		(at 124.46 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1806507e-7462-4d8b-8ee0-8213f1e53175")
+	)
+	(junction
+		(at 133.35 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "205450f9-f1ff-4ef9-81e7-c3a97db60e60")
+	)
+	(junction
+		(at 127 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d2a9b12-2223-4fe6-8f66-abab8f70448f")
+	)
+	(junction
+		(at 130.81 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42fe604e-b27a-45dc-9fd5-72d6b5b8a703")
+	)
+	(junction
+		(at 133.35 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61550e6d-3d2d-42bc-ad38-fb500cbb730f")
+	)
+	(junction
+		(at 124.46 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6884cf7b-1083-4c59-8125-65da7ca08645")
+	)
+	(junction
+		(at 130.81 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69229061-420d-495b-a160-3d4dd3077305")
+	)
+	(junction
+		(at 133.35 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "702b6b84-d120-4e0a-89e4-f34cf0d1857d")
+	)
+	(junction
+		(at 124.46 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d3e300a-5eb8-47a0-b72a-b620f1dd0709")
+	)
+	(junction
+		(at 127 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8fa2481-d9ed-439e-ac2f-eb9a95596716")
+	)
+	(junction
+		(at 127 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d45cd868-0bd6-474d-b914-c016240e961f")
+	)
+	(junction
+		(at 124.46 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e958dfea-9bc5-4b99-bdc0-6dad7b014216")
+	)
+	(junction
+		(at 133.35 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc588f26-004a-453d-b454-8196c035f41d")
+	)
+	(junction
+		(at 127 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcd500ec-11e8-4e05-b345-c00e7d819e66")
+	)
 	(wire
 		(pts
-			(xy 129.54 114.3) (xy 130.81 114.3)
+			(xy 124.46 109.22) (xy 130.81 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c3389b-b144-4c7e-840b-d47f28714b43")
+	)
+	(wire
+		(pts
+			(xy 124.46 86.36) (xy 124.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ff51d5-b0b2-4fa3-aa60-07812ed5122f")
+	)
+	(wire
+		(pts
+			(xy 93.98 134.62) (xy 95.25 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04398651-871a-4690-9de3-5e0a7c773d9d")
+	)
+	(wire
+		(pts
+			(xy 139.7 60.96) (xy 139.7 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07d29b5a-2e17-464b-8313-adc6cb4a2a9a")
+	)
+	(wire
+		(pts
+			(xy 107.95 66.04) (xy 109.22 66.04)
 		)
 		(stroke
 			(width 0)
@@ -406,27 +562,127 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 113.03) (xy 146.05 113.03)
+			(xy 127 64.77) (xy 133.35 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a416c64-1dd4-433d-acdd-1886c79eef5d")
+		(uuid "0ca1fc4b-02ca-4acb-8533-8993735bd160")
 	)
 	(wire
 		(pts
-			(xy 144.78 128.27) (xy 144.78 127)
+			(xy 107.95 134.62) (xy 109.22 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e410e87-68a6-4adc-9884-8b6f8aa42c28")
+		(uuid "0f15d025-dbf9-4cfd-8f14-99395c2e7f4f")
 	)
 	(wire
 		(pts
-			(xy 115.57 128.27) (xy 116.84 128.27)
+			(xy 127 133.35) (xy 133.35 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f3f0c77-e9d2-49ea-8a41-55234a1b0866")
+	)
+	(wire
+		(pts
+			(xy 130.81 62.23) (xy 130.81 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10bd1c44-34a6-4881-bf35-3677de8d5f03")
+	)
+	(wire
+		(pts
+			(xy 127 134.62) (xy 127 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e55afa-f004-4986-bd14-b8169b5df432")
+	)
+	(wire
+		(pts
+			(xy 91.44 107.95) (xy 91.44 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15301924-6476-444c-a4c6-348385d66666")
+	)
+	(wire
+		(pts
+			(xy 130.81 109.22) (xy 130.81 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "156f953e-ee89-43ec-87d5-5070a7de2cfa")
+	)
+	(wire
+		(pts
+			(xy 107.95 130.81) (xy 124.46 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16f4f836-8e3e-46a9-9fd2-b58203503340")
+	)
+	(wire
+		(pts
+			(xy 137.16 109.22) (xy 137.16 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c4d8885-51ac-4bcb-84bc-f4900ef16c60")
+	)
+	(wire
+		(pts
+			(xy 91.44 129.54) (xy 91.44 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "321ceb2b-4ed5-4944-a5c2-2c7e54535f57")
+	)
+	(wire
+		(pts
+			(xy 133.35 60.96) (xy 133.35 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36730863-42f6-4c87-9319-b42d6c9c2a6d")
+	)
+	(wire
+		(pts
+			(xy 139.7 86.36) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39639f13-965f-41bf-a7c3-64a6a0dd96e5")
+	)
+	(wire
+		(pts
+			(xy 93.98 91.44) (xy 95.25 91.44)
 		)
 		(stroke
 			(width 0)
@@ -436,17 +692,77 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 124.46) (xy 146.05 124.46)
+			(xy 124.46 60.96) (xy 124.46 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ab5a6db-b08e-41f9-8916-3d04947fdf3e")
+		(uuid "4169c182-14f5-4ce2-a9f0-52d73b1ff130")
 	)
 	(wire
 		(pts
-			(xy 113.03 123.19) (xy 113.03 124.46)
+			(xy 124.46 87.63) (xy 130.81 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47050587-baff-4a3a-9b25-5c5cba3f64ce")
+	)
+	(wire
+		(pts
+			(xy 127 107.95) (xy 127 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4af885f9-b24e-48c0-b779-782a31e2cff3")
+	)
+	(wire
+		(pts
+			(xy 137.16 87.63) (xy 137.16 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53099fbf-169e-4fb1-9339-331b931bf11c")
+	)
+	(wire
+		(pts
+			(xy 107.95 109.22) (xy 124.46 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5334056e-bc54-41db-98dc-db1d54e6fa3d")
+	)
+	(wire
+		(pts
+			(xy 139.7 129.54) (xy 139.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "595e69b8-3ce2-4182-8e55-c73cc4d9bdc2")
+	)
+	(wire
+		(pts
+			(xy 124.46 129.54) (xy 124.46 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af1f957-ff4f-485f-a3a8-252270d1efee")
+	)
+	(wire
+		(pts
+			(xy 91.44 86.36) (xy 91.44 87.63)
 		)
 		(stroke
 			(width 0)
@@ -456,7 +772,157 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 128.27) (xy 130.81 128.27)
+			(xy 91.44 130.81) (xy 95.25 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d7e10c0-256e-4b60-8b64-d144ae76f315")
+	)
+	(wire
+		(pts
+			(xy 133.35 129.54) (xy 133.35 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6172bda5-b376-47e7-aab9-fc263ebcf19c")
+	)
+	(wire
+		(pts
+			(xy 124.46 130.81) (xy 130.81 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "645ffd2d-ce5c-481e-8b43-8e329adefc99")
+	)
+	(wire
+		(pts
+			(xy 133.35 107.95) (xy 133.35 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670a591f-99c0-4841-9c60-943e56939eec")
+	)
+	(wire
+		(pts
+			(xy 137.16 62.23) (xy 137.16 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67d313f6-97ac-4b62-9c78-aabfd9dbed20")
+	)
+	(wire
+		(pts
+			(xy 130.81 130.81) (xy 137.16 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73538f40-3a5e-4830-bae2-8d26e856077f")
+	)
+	(wire
+		(pts
+			(xy 127 60.96) (xy 127 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75557b6c-b0fa-4596-8378-da9d867f9db0")
+	)
+	(wire
+		(pts
+			(xy 130.81 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "790c37ec-50f3-4011-9291-159ecbfecd1c")
+	)
+	(wire
+		(pts
+			(xy 137.16 130.81) (xy 137.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f397a81-5f32-454b-bbcc-ef01aabae833")
+	)
+	(wire
+		(pts
+			(xy 127 91.44) (xy 127 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800741b0-12a3-4526-aa05-02b213331e0b")
+	)
+	(wire
+		(pts
+			(xy 130.81 62.23) (xy 137.16 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89a69fe9-b94b-47bd-99a0-dc621dc9b089")
+	)
+	(wire
+		(pts
+			(xy 133.35 111.76) (xy 139.7 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93abf9ec-d84d-4a11-8b22-e2a271301ae9")
+	)
+	(wire
+		(pts
+			(xy 130.81 87.63) (xy 130.81 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93fb37f8-2178-43fd-aa41-5783c74304c6")
+	)
+	(wire
+		(pts
+			(xy 130.81 130.81) (xy 130.81 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fdbd5d0-9c2e-41ba-b36c-4926df54f9d7")
+	)
+	(wire
+		(pts
+			(xy 107.95 113.03) (xy 109.22 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b312f9-329f-444c-bd88-4ede9c594f50")
+	)
+	(wire
+		(pts
+			(xy 107.95 91.44) (xy 109.22 91.44)
 		)
 		(stroke
 			(width 0)
@@ -466,7 +932,27 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 110.49) (xy 116.84 110.49)
+			(xy 124.46 62.23) (xy 130.81 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2c9ca69-4725-4055-b3a5-1d42fa474372")
+	)
+	(wire
+		(pts
+			(xy 127 86.36) (xy 127 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c6a42d-c1a2-4d9e-b554-05252df00423")
+	)
+	(wire
+		(pts
+			(xy 91.44 62.23) (xy 95.25 62.23)
 		)
 		(stroke
 			(width 0)
@@ -476,7 +962,27 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 144.78 113.03)
+			(xy 93.98 113.03) (xy 95.25 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be899ae3-4476-4faa-b4d6-a2684d087c69")
+	)
+	(wire
+		(pts
+			(xy 133.35 86.36) (xy 133.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea694f7-9262-4351-9187-41138ccbef42")
+	)
+	(wire
+		(pts
+			(xy 127 66.04) (xy 127 64.77)
 		)
 		(stroke
 			(width 0)
@@ -486,17 +992,87 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 127) (xy 146.05 127)
+			(xy 127 90.17) (xy 133.35 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0d2c682-3901-40e7-bed8-ff06262147ac")
+		(uuid "c0032d42-d458-4f49-8366-22e5c7d1b9c0")
 	)
 	(wire
 		(pts
-			(xy 129.54 110.49) (xy 146.05 110.49)
+			(xy 91.44 109.22) (xy 95.25 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c14507ec-6124-42a3-ac32-e5f354f246a0")
+	)
+	(wire
+		(pts
+			(xy 133.35 90.17) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3768b15-771f-4850-80f2-ebf84803131a")
+	)
+	(wire
+		(pts
+			(xy 124.46 107.95) (xy 124.46 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c399338b-de0f-46cf-83ef-be5da1f0c8bf")
+	)
+	(wire
+		(pts
+			(xy 130.81 109.22) (xy 137.16 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c431a5f2-726d-407a-bfe0-6b4d3b1a06b9")
+	)
+	(wire
+		(pts
+			(xy 107.95 87.63) (xy 124.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c958db30-5fb0-43a8-9d1f-90a5687da57a")
+	)
+	(wire
+		(pts
+			(xy 127 129.54) (xy 127 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0149d41-2cdf-4324-b2cb-5d01462564c6")
+	)
+	(wire
+		(pts
+			(xy 127 113.03) (xy 127 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f7f4a8-6e04-47be-a573-974cb3ad6db0")
+	)
+	(wire
+		(pts
+			(xy 107.95 62.23) (xy 124.46 62.23)
 		)
 		(stroke
 			(width 0)
@@ -506,7 +1082,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 116.84 124.46)
+			(xy 91.44 87.63) (xy 95.25 87.63)
 		)
 		(stroke
 			(width 0)
@@ -516,7 +1092,27 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 114.3) (xy 116.84 114.3)
+			(xy 133.35 133.35) (xy 139.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e81dce81-7933-4280-9dd6-3ef76bf0492b")
+	)
+	(wire
+		(pts
+			(xy 127 111.76) (xy 133.35 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e850cb63-25f7-444e-ab2b-04a78071676b")
+	)
+	(wire
+		(pts
+			(xy 93.98 66.04) (xy 95.25 66.04)
 		)
 		(stroke
 			(width 0)
@@ -526,7 +1122,27 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 109.22) (xy 113.03 110.49)
+			(xy 133.35 64.77) (xy 139.7 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03bb49b-4420-45fe-b2a3-658223d55549")
+	)
+	(wire
+		(pts
+			(xy 139.7 107.95) (xy 139.7 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa0a5ff8-dfe2-4a67-ba65-f4d70d5d99b9")
+	)
+	(wire
+		(pts
+			(xy 91.44 60.96) (xy 91.44 62.23)
 		)
 		(stroke
 			(width 0)
@@ -536,7 +1152,7 @@
 	)
 	(global_label "EN_5V_2"
 		(shape input)
-		(at 115.57 128.27 180)
+		(at 93.98 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -546,7 +1162,7 @@
 		)
 		(uuid "3b5b3886-f88e-4cc5-8447-e9e924c30001")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.6625 128.27 0)
+			(at 83.0725 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -558,7 +1174,7 @@
 	)
 	(global_label "PG_5V_2"
 		(shape output)
-		(at 130.81 128.27 0)
+		(at 109.22 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -568,7 +1184,95 @@
 		)
 		(uuid "3b773fed-0b67-4dae-95fd-00c573b46a49")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.778 128.27 0)
+			(at 120.188 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EN_12V_1"
+		(shape input)
+		(at 93.98 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "49991c36-acb3-4d7d-845a-1d1e19df31d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.863 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EN_12V_2"
+		(shape input)
+		(at 93.98 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a8758c8-fcc4-4caa-b750-fdc163c19e92")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.863 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PG_12V_2"
+		(shape output)
+		(at 109.22 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "63aab334-79b6-4b33-8730-76a4d87a4b51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.3975 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PG_12V_1"
+		(shape output)
+		(at 109.22 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2bc20d3-13a8-4593-a855-7d711a1aedb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.3975 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -580,7 +1284,7 @@
 	)
 	(global_label "PG_5V_1"
 		(shape output)
-		(at 130.81 114.3 0)
+		(at 109.22 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -590,7 +1294,7 @@
 		)
 		(uuid "df99d021-3a41-4e6d-8feb-8f94031e6923")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.778 114.3 0)
+			(at 120.188 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -602,7 +1306,7 @@
 	)
 	(global_label "EN_5V_1"
 		(shape input)
-		(at 115.57 114.3 180)
+		(at 93.98 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -612,7 +1316,7 @@
 		)
 		(uuid "ffe3f71b-1c39-437a-84e4-c778cbfdc96a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.6625 114.3 0)
+			(at 83.0725 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -623,17 +1327,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 144.78 114.3 0)
+		(lib_id "power:+12V")
+		(at 91.44 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1719d380-e121-48f7-a0b2-2f1fac4552bb")
-		(property "Reference" "#PWR071"
-			(at 144.78 120.65 0)
+		(uuid "0c6072e8-2149-4e77-bde0-0575ae6c93d4")
+		(property "Reference" "#PWR095"
+			(at 91.44 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -641,17 +1344,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 144.78 119.38 0)
+		(property "Value" "+12V"
+			(at 90.932 125.476 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 114.3 0)
+			(at 91.44 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,7 +1362,139 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 114.3 0)
+			(at 91.44 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 91.44 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aba90c7f-6c06-451e-9e11-826f5c2de9a5")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 91.44 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1431fb56-2810-4c22-944f-6f31ca5cfa85")
+		(property "Reference" "#PWR083"
+			(at 91.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 90.932 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b450ddb3-8856-4401-b630-9f0407e021ab")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1719d380-e121-48f7-a0b2-2f1fac4552bb")
+		(property "Reference" "#PWR071"
+			(at 127 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -669,7 +1503,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 114.3 0)
+			(at 127 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -690,16 +1524,36 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 113.03 109.22 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 81.28 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "55f40f04-1a64-4019-a148-11c0954af5d8")
-		(property "Reference" "#PWR072"
-			(at 113.03 113.03 0)
+		(fields_autoplaced yes)
+		(uuid "1fd447ed-604f-44f4-b7ea-f5560d3ee710")
+		(property "Reference" "J3"
+			(at 125.73 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 124.4601 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 127 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -707,16 +1561,105 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 112.522 105.156 0)
+		(property "Datasheet" "~"
+			(at 127 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee415f62-afcc-496b-9f75-bb7c8658e530")
+		)
+		(pin "1"
+			(uuid "c1bf7f33-03fb-45ee-8282-90e0777ed1c0")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2cd22585-5fe1-4a2d-8291-82f6f12449e6")
+		(property "Reference" "#PWR084"
+			(at 127 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 109.22 0)
+			(at 127 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +1668,286 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 109.22 0)
+			(at 127 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06dc35c4-a1cf-4b0e-9da5-2fcba8a61d3b")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 133.35 102.87 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30843ef2-6712-402c-96a7-0fd428d74a5b")
+		(property "Reference" "J11"
+			(at 132.08 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 130.8101 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b6a1fd83-6d6c-47e6-90bd-baaaa5a153f2")
+		)
+		(pin "1"
+			(uuid "6b356885-69c2-4ee1-aca3-f84fbee999c6")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 133.35 81.28 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "453051cf-db6b-48b4-a65a-bf2a277bcf9f")
+		(property "Reference" "J5"
+			(at 132.08 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 130.8101 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "549e8d21-3c81-4cd8-a13f-9d28b67b97cb")
+		)
+		(pin "1"
+			(uuid "f49cff26-4d09-42fa-aecb-3a386c7b369b")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 91.44 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55f40f04-1a64-4019-a148-11c0954af5d8")
+		(property "Reference" "#PWR072"
+			(at 91.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 90.932 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -734,7 +1956,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 113.03 109.22 0)
+			(at 91.44 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -755,8 +1977,222 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 102.87 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ce87710-041d-41ab-b408-05821f6d7314")
+		(property "Reference" "J10"
+			(at 125.73 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 124.4601 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "644161e8-dad7-467e-8e14-9a2d612caae6")
+		)
+		(pin "1"
+			(uuid "4427c298-caaf-4c6a-aeab-5acfe46bbb45")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 139.7 124.46 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "716d3935-94a5-4860-9233-4e1c3601ab86")
+		(property "Reference" "J15"
+			(at 138.43 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 137.1601 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a16a68b-ec69-43d8-8973-7d08029ded91")
+		)
+		(pin "1"
+			(uuid "f527feaf-5f71-4e4d-b51a-52f4fcbe0399")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
-		(at 113.03 123.19 0)
+		(at 91.44 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -764,7 +2200,7 @@
 		(dnp no)
 		(uuid "76c05ec7-2a74-4126-981e-4615152fe1be")
 		(property "Reference" "#PWR073"
-			(at 113.03 127 0)
+			(at 91.44 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -773,7 +2209,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 112.522 119.126 0)
+			(at 90.932 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -781,7 +2217,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 123.19 0)
+			(at 91.44 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -790,7 +2226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 123.19 0)
+			(at 91.44 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -799,7 +2235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 113.03 123.19 0)
+			(at 91.44 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,24 +2257,25 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 151.13 124.46 0)
+		(at 139.7 102.87 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "81dfa086-aa88-4ada-956c-b94cb477331c")
-		(property "Reference" "J3"
-			(at 153.162 125.73 0)
+		(fields_autoplaced yes)
+		(uuid "8d454d6a-895a-4512-9cfa-c9c1521b12d2")
+		(property "Reference" "J12"
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 153.67 126.9999 0)
+			(at 137.1601 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,7 +2285,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +2294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -866,7 +2303,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +2312,7 @@
 			)
 		)
 		(property "Basic" "Z"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +2321,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C158012"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -893,7 +2330,7 @@
 			)
 		)
 		(property "Manufacturer" "JST"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +2339,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
-			(at 151.13 124.46 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -911,82 +2348,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "711e0dbe-6f9e-4058-a759-5115f8fbb5e2")
+			(uuid "d3871f84-cd83-4f27-a756-2c08dd1a2e31")
 		)
 		(pin "1"
-			(uuid "82e12b1a-30c2-47e7-abc6-6ff4c3f2eaa2")
+			(uuid "6dcdeaaf-5fa2-4865-976b-71e9af1ea145")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 144.78 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8647e237-fd2c-4491-8aac-11a65e80e1a7")
-		(property "Reference" "#PWR074"
-			(at 144.78 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 144.78 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f92257d0-c465-4fcb-ac1c-ba61b6c19c9a")
-		)
-		(instances
-			(project "valrob-carte-alim-cdf-1"
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
-					(reference "#PWR074")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -994,24 +2364,25 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 151.13 110.49 0)
+		(at 127 124.46 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae2507c2-67ed-45cb-a1bb-b24c855ede86")
-		(property "Reference" "J2"
-			(at 153.162 111.76 0)
+		(fields_autoplaced yes)
+		(uuid "925271ab-b38d-4df1-b52f-69ecb69e5bf8")
+		(property "Reference" "J13"
+			(at 125.73 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 153.67 113.0299 0)
+			(at 124.4601 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +2392,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,7 +2401,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1039,7 +2410,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1048,7 +2419,7 @@
 			)
 		)
 		(property "Basic" "Z"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1057,7 +2428,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C158012"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1066,7 +2437,7 @@
 			)
 		)
 		(property "Manufacturer" "JST"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1075,7 +2446,395 @@
 			)
 		)
 		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
-			(at 151.13 110.49 0)
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a739064-e173-4f57-8fba-94572ec4743d")
+		)
+		(pin "1"
+			(uuid "1290fb56-e809-4655-a7ad-9a8264fbd10d")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 139.7 55.88 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "948eb788-a0e1-4850-9fea-6c21de46ac44")
+		(property "Reference" "J9"
+			(at 138.43 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 137.1601 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 139.7 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "990a6d7d-0b27-4503-918e-42d847f63141")
+		)
+		(pin "1"
+			(uuid "7aa47a85-584d-44f1-8d41-420d862d810f")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 133.35 55.88 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e570532-8730-4324-998f-853ef4473050")
+		(property "Reference" "J8"
+			(at 132.08 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 130.8101 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "de2a7cbe-6c81-45f6-b20b-c090a54c4f60")
+		)
+		(pin "1"
+			(uuid "d5b02408-fd49-4a1d-b29b-d95f9a0faa98")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a13000e6-270e-4c11-980e-e252ffa969ce")
+		(property "Reference" "#PWR096"
+			(at 127 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04cca88f-2cc2-473e-8dd5-9f5a67b964b6")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127 55.88 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae2507c2-67ed-45cb-a1bb-b24c855ede86")
+		(property "Reference" "J2"
+			(at 125.73 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 124.4601 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 127 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 127 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1090,7 +2849,7 @@
 			(uuid "dac293da-9733-49dd-849a-5787dce709bf")
 		)
 		(instances
-			(project ""
+			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
 					(reference "J2")
 					(unit 1)
@@ -1098,8 +2857,289 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 139.7 81.28 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5326353-3826-4d44-a153-04819283b632")
+		(property "Reference" "J7"
+			(at 138.43 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 137.1601 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a02eefed-7796-49c1-bcd3-2a7ac050acb3")
+		)
+		(pin "1"
+			(uuid "3854d8f6-0d76-4079-886c-ae8c140e164f")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 133.35 124.46 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c891bd5e-72bb-4dac-8e94-1ee5315cabd5")
+		(property "Reference" "J14"
+			(at 132.08 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 130.8101 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 133.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf58804d-aabc-4db0-a3f0-2c99641552fd")
+		)
+		(pin "1"
+			(uuid "5f190606-8b1f-4493-a72f-dc1c80561f8b")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f683fb64-789d-438b-8b7c-6045bae2041c")
+		(property "Reference" "#PWR074"
+			(at 127 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b012769-be92-442f-a5ef-b466f6fd0b3d")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 116.84 123.19)
+		(at 95.25 86.36)
 		(size 12.7 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1115,7 +3155,7 @@
 		)
 		(uuid "1e5e9d25-7b17-450b-be0c-a1c8745b97c8")
 		(property "Sheetname" "Efuse 5V 5A 2"
-			(at 116.84 122.4784 0)
+			(at 95.25 85.6484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1124,7 +3164,7 @@
 			)
 		)
 		(property "Sheetfile" "efuse-5-5.kicad_sch"
-			(at 116.84 130.1246 0)
+			(at 95.25 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1134,7 +3174,7 @@
 			)
 		)
 		(pin "EN" input
-			(at 116.84 128.27 180)
+			(at 95.25 91.44 180)
 			(uuid "ccacacbe-82ef-4bc7-84c4-a534403bac5d")
 			(effects
 				(font
@@ -1144,7 +3184,7 @@
 			)
 		)
 		(pin "PG" output
-			(at 129.54 128.27 0)
+			(at 107.95 91.44 0)
 			(uuid "f45bf765-3634-4e7e-b9a9-f04bf0f54623")
 			(effects
 				(font
@@ -1154,7 +3194,7 @@
 			)
 		)
 		(pin "OUT" input
-			(at 129.54 124.46 0)
+			(at 107.95 87.63 0)
 			(uuid "9997310d-35be-47c7-9193-3df05144c736")
 			(effects
 				(font
@@ -1164,7 +3204,7 @@
 			)
 		)
 		(pin "IN" input
-			(at 116.84 124.46 180)
+			(at 95.25 87.63 180)
 			(uuid "d19caffc-9e39-43ad-91ad-52f88435d05b")
 			(effects
 				(font
@@ -1182,7 +3222,7 @@
 		)
 	)
 	(sheet
-		(at 116.84 109.22)
+		(at 95.25 60.96)
 		(size 12.7 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1198,7 +3238,7 @@
 		)
 		(uuid "23413aed-8ca3-45a8-a057-9391688fcaa2")
 		(property "Sheetname" "Efuse 5V 5A 1"
-			(at 116.84 108.5084 0)
+			(at 95.25 60.2484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +3247,7 @@
 			)
 		)
 		(property "Sheetfile" "efuse-5-5.kicad_sch"
-			(at 116.84 116.1546 0)
+			(at 95.25 67.8946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1217,7 +3257,7 @@
 			)
 		)
 		(pin "EN" input
-			(at 116.84 114.3 180)
+			(at 95.25 66.04 180)
 			(uuid "d9978e20-b1ee-4ba4-859e-62d2df59c28b")
 			(effects
 				(font
@@ -1227,7 +3267,7 @@
 			)
 		)
 		(pin "PG" output
-			(at 129.54 114.3 0)
+			(at 107.95 66.04 0)
 			(uuid "802d5599-6f02-4a15-808a-d3d9a6c3eede")
 			(effects
 				(font
@@ -1237,7 +3277,7 @@
 			)
 		)
 		(pin "OUT" input
-			(at 129.54 110.49 0)
+			(at 107.95 62.23 0)
 			(uuid "60002bd7-9e93-4b0a-9c49-12f52b193d3e")
 			(effects
 				(font
@@ -1247,7 +3287,7 @@
 			)
 		)
 		(pin "IN" input
-			(at 116.84 110.49 180)
+			(at 95.25 62.23 180)
 			(uuid "e2247d27-6c0c-4ce3-b9a8-5ac97e070abe")
 			(effects
 				(font
@@ -1260,6 +3300,172 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 129.54)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "897efccf-9ba0-4cd0-920a-43d7da1c794b")
+		(property "Sheetname" "Efuse 12V 5A 2"
+			(at 95.25 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "efuse-12-5.kicad_sch"
+			(at 95.25 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "EN" input
+			(at 95.25 134.62 180)
+			(uuid "d4064204-9a5d-4b3c-97d4-49c5d4220dae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PG" output
+			(at 107.95 134.62 0)
+			(uuid "250f1ded-ba8a-4132-b2c2-b6f29db3c827")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" input
+			(at 107.95 130.81 0)
+			(uuid "16bb1220-db28-4acf-92d0-a7cfb4e81c61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IN" input
+			(at 95.25 130.81 180)
+			(uuid "1664cdae-a195-4ad6-ba06-179d34399e3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 107.95)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a7541f7c-679e-41f8-9efa-18ff84fb26c0")
+		(property "Sheetname" "Efuse 12V 5A 1"
+			(at 95.25 107.2384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "efuse-12-5.kicad_sch"
+			(at 95.25 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "EN" input
+			(at 95.25 113.03 180)
+			(uuid "4ed18471-68f5-467f-a3ec-43274be6062c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PG" output
+			(at 107.95 113.03 0)
+			(uuid "d176ca5d-c9ac-4c55-8af7-3d743bb1d8eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" input
+			(at 107.95 109.22 0)
+			(uuid "399a7885-ba1c-4316-b940-c18c6ca13d8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IN" input
+			(at 95.25 109.22 180)
+			(uuid "7cfeac70-2f55-4ceb-8b02-480a8e4f9c8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b"
+					(page "8")
 				)
 			)
 		)
