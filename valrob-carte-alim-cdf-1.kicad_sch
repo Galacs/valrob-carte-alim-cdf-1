@@ -10048,7 +10048,7 @@
 		(dnp no)
 		(uuid "df725395-088e-4ff6-9794-2c22af5b22db")
 		(property "Reference" "J4"
-			(at 78.994 81.026 90)
+			(at 78.994 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
