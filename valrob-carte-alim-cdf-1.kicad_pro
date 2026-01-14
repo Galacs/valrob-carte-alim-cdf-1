@@ -472,14 +472,6 @@
       "Power"
     ],
     [
-      "4469bb82-be42-4e6b-9b3c-f9dcfba48861",
-      "Efuse 12V 5A"
-    ],
-    [
-      "d45c968d-64b1-499a-bee8-06850ed7b82c",
-      "Efuse 5V 5A"
-    ],
-    [
       "007b07d4-119b-4744-aa24-fabc828b541b",
       "Connectors"
     ],
@@ -498,6 +490,22 @@
     [
       "897efccf-9ba0-4cd0-920a-43d7da1c794b",
       "Efuse 12V 5A 2"
+    ],
+    [
+      "c68fcf24-d266-4575-8fd9-b617598010ac",
+      "Efuse 12V 5A 3"
+    ],
+    [
+      "2da8bdbe-fbad-48e0-8074-270f50ca7ae9",
+      "Efuse 12V 5A 4"
+    ],
+    [
+      "f0ee5f2e-86ee-4428-a295-f50dc212690a",
+      "Efuse 5V 5A 3"
+    ],
+    [
+      "b332dafb-def0-4f90-adff-106c0f93188a",
+      "Efuse 5V 5A 4"
     ]
   ],
   "text_variables": {}

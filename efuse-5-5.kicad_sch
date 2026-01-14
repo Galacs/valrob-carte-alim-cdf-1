@@ -975,6 +975,12 @@
 		(uuid "72ffdaa2-7528-4ae4-9a45-e779491c2fdc")
 	)
 	(junction
+		(at 138.43 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81ab6563-eccd-46af-893b-b3d5f6e06669")
+	)
+	(junction
 		(at 143.51 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1020,7 +1026,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 119.38) (xy 148.59 119.38)
+			(xy 128.27 119.38) (xy 138.43 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1037,6 +1043,16 @@
 			(type default)
 		)
 		(uuid "10f00b0f-7047-4630-bc39-ce9d3390f514")
+	)
+	(wire
+		(pts
+			(xy 138.43 119.38) (xy 148.59 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1148e165-6dd7-43e3-a356-7db86b0649c9")
 	)
 	(wire
 		(pts
@@ -1107,6 +1123,16 @@
 			(type default)
 		)
 		(uuid "42a8d9a7-9453-4879-b835-8131c1c40207")
+	)
+	(wire
+		(pts
+			(xy 138.43 119.38) (xy 138.43 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "449a5f83-9873-4a18-b28b-c656fc42a36f")
 	)
 	(wire
 		(pts
@@ -1267,6 +1293,16 @@
 			(type default)
 		)
 		(uuid "9bd2c993-2c48-4d46-9a03-5ad4cff9f360")
+	)
+	(wire
+		(pts
+			(xy 138.43 121.92) (xy 137.16 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a139bdcf-1fc3-4593-83c3-4f4cb8c96f83")
 	)
 	(wire
 		(pts
@@ -1492,10 +1528,21 @@
 		)
 		(uuid "77a60eb8-f471-42da-861c-9f952f1a4fe0")
 	)
+	(hierarchical_label "ILM"
+		(shape output)
+		(at 137.16 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1fc8aef-2b77-46b5-93b4-b01ab19a2511")
+	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 172.72 74.93) (xy 172.72 130.81) (xy 101.6 130.81) (xy 101.6 74.93)
+				(xy 173.99 73.66) (xy 173.99 129.54) (xy 102.87 129.54) (xy 102.87 73.66)
 			)
 			(stroke
 				(width 0)
@@ -1510,7 +1557,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 105.41 74.93 0)
+		(at 106.68 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1520,7 +1567,7 @@
 		)
 		(uuid "a35e8ef9-c6dc-4ab3-9b9d-a097f22f9771")
 		(property "Netclass" ""
-			(at -129.54 -20.32 0)
+			(at -128.27 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,7 +1575,7 @@
 			)
 		)
 		(property "Component Class" "5V_EFUSE"
-			(at 106.1085 72.39 0)
+			(at 107.3785 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1548,7 +1595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a99794a-b647-446e-a809-b4d989bbc5db")
-		(property "Reference" "R27"
+		(property "Reference" "R35"
 			(at 123.19 125.73 90)
 			(effects
 				(font
@@ -1628,10 +1675,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "76f76219-e714-4980-8384-492d253e9688")
+			(uuid "355043be-5ea5-4652-aa7d-b7f2ab9d5044")
 		)
 		(pin "2"
-			(uuid "716de7b9-d9ae-48d5-8202-f5da1fa0b494")
+			(uuid "e6620def-eda7-41bd-b40b-0695f3e2797d")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -1643,8 +1690,12 @@
 					(reference "R35")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R27")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R88")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -1659,7 +1710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2fb018cb-c496-494d-a45a-b36eb703eb1a")
-		(property "Reference" "C21"
+		(property "Reference" "C24"
 			(at 144.272 104.648 0)
 			(effects
 				(font
@@ -1741,10 +1792,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "e6ac631c-ea2c-49e9-9b4f-03fd0353b8a0")
+			(uuid "4805d52c-8e68-4830-80ef-47f64551eed2")
 		)
 		(pin "1"
-			(uuid "c2d0704d-eebf-4640-9b49-39d3c3c33f91")
+			(uuid "d81d372f-c882-4fa3-ae88-a259b4da936a")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -1756,8 +1807,12 @@
 					(reference "C24")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "C21")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "C56")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -1774,7 +1829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e1b8633-d1b2-4423-88eb-9d306a44f6d0")
-		(property "Reference" "C19"
+		(property "Reference" "C22"
 			(at 115.57 96.5199 0)
 			(effects
 				(font
@@ -1856,10 +1911,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "889c2c33-8349-4fa7-a68e-9426597c3692")
+			(uuid "45b116b8-3bf2-43b0-a9cf-6d13e54db7c3")
 		)
 		(pin "2"
-			(uuid "1170c264-44e9-4598-95a9-4e1836597122")
+			(uuid "7688150a-1209-459a-a367-e8de3de8b1ea")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -1871,8 +1926,12 @@
 					(reference "C22")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "C19")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "C54")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -1887,7 +1946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "427c34e6-7cf5-45a6-9c44-3cc7e83f2e78")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR070"
 			(at 163.83 113.03 0)
 			(effects
 				(font
@@ -1932,7 +1991,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "49a0b81e-6398-4ecc-ad1c-640b3a9cde1a")
+			(uuid "d714c635-95e0-4837-9d97-0c628c834e46")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -1944,8 +2003,12 @@
 					(reference "#PWR070")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR044")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0143")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -1962,7 +2025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "438bae91-6fef-4fc4-b512-9de2699e8591")
-		(property "Reference" "R23"
+		(property "Reference" "R32"
 			(at 109.22 82.5499 0)
 			(effects
 				(font
@@ -2044,10 +2107,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "484170d1-e7ca-497f-a732-27e2ed5cc811")
+			(uuid "5f940357-6159-4880-831a-e501f92aa373")
 		)
 		(pin "2"
-			(uuid "822c5e11-43a6-40eb-a6bc-59c6884c8c35")
+			(uuid "a66d0558-8fb1-43c7-acfa-d41d68b27310")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2059,8 +2122,12 @@
 					(reference "R32")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R23")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R85")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R78")
 					(unit 1)
 				)
 			)
@@ -2076,7 +2143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d87d717-a050-458b-bf44-ba9346eeca97")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 144.145 78.74 0)
 			(effects
 				(font
@@ -2119,35 +2186,71 @@
 				(hide yes)
 			)
 		)
+		(property "Basic" "X"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C3662789"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "TPS259472ARPWR"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "d32a64ac-0634-4d3b-85ab-db2ba51ec1f0")
+			(uuid "dd98f421-a8d0-4e21-b6f1-e295b5fba47a")
 		)
 		(pin "3"
-			(uuid "334e5849-ece7-463b-9f51-4b3179d141ea")
+			(uuid "8657ef72-1543-4b7c-a573-ea979dd05d95")
 		)
 		(pin "9"
-			(uuid "11512506-f0d2-421b-a45d-01fe06a38b7e")
+			(uuid "428c9d72-8e7e-48f6-8cb7-4f1bd9ff5092")
 		)
 		(pin "1"
-			(uuid "613262a3-891a-4719-8cd3-08d63677d9b1")
+			(uuid "39bbfec1-c0d6-4514-8e78-f42936ca46f1")
 		)
 		(pin "5"
-			(uuid "200d5817-00ca-4814-997c-520956d9758b")
+			(uuid "41dbf259-edbf-4a8e-8b2a-7cab71f727f7")
 		)
 		(pin "2"
-			(uuid "22e2b16a-e1ec-4081-8363-aa64dcd112d9")
+			(uuid "6c8608de-6423-4ca8-881d-c2e457b35e08")
 		)
 		(pin "8"
-			(uuid "9dcedcf8-965e-4c28-b962-6738d8c29e88")
+			(uuid "476e3030-a109-48d0-9b92-66287a3529ee")
 		)
 		(pin "7"
-			(uuid "436ec179-4b20-4cd1-a8a9-1134b949b156")
+			(uuid "7c255787-a572-4f5a-b5e5-7ba51f217ac9")
 		)
 		(pin "10"
-			(uuid "cc25a933-c395-42ac-a5b5-f85a279f1cbd")
+			(uuid "6ea1dea2-e40e-4a52-a756-733cf2427a92")
 		)
 		(pin "4"
-			(uuid "14289db3-0071-4ac2-b19b-cfa15e73132d")
+			(uuid "5d665d24-9c55-4da6-8e9c-2ab96dc3c917")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2159,8 +2262,12 @@
 					(reference "U5")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "U3")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "U14")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -2176,7 +2283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9dd73fed-9003-409a-8739-a3de4a53bd6e")
-		(property "Reference" "R26"
+		(property "Reference" "R34"
 			(at 130.81 115.57 90)
 			(effects
 				(font
@@ -2256,10 +2363,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "af99fdf7-d2b4-419b-b821-cf7405d1d2f0")
+			(uuid "d00f2559-ea73-4f4c-b9f2-e58d4e7fd925")
 		)
 		(pin "2"
-			(uuid "b6bb380e-1cb9-4485-894a-31985de02c46")
+			(uuid "437f3d64-5de0-44c3-a347-69e8687c7f2b")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2271,8 +2378,12 @@
 					(reference "R34")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R26")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R87")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R80")
 					(unit 1)
 				)
 			)
@@ -2288,7 +2399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8b2d490-32ef-4134-be88-9738ab304632")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR068"
 			(at 153.67 128.27 0)
 			(effects
 				(font
@@ -2334,7 +2445,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "95fe1ee8-a240-4088-9830-654d704813bd")
+			(uuid "f5faa727-7b36-4c72-b277-b000aa1414f7")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2346,8 +2457,12 @@
 					(reference "#PWR068")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR042")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -2363,7 +2478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af5cbc20-894b-429d-848b-32626df0d7ba")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR065"
 			(at 143.51 121.92 0)
 			(effects
 				(font
@@ -2409,7 +2524,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e0e8921-3927-4895-bfd7-b4cfb3214a28")
+			(uuid "ae5b68bd-460f-482b-8cf8-12197d2e4281")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2421,8 +2536,12 @@
 					(reference "#PWR065")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR041")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -2438,7 +2557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b03f4a84-f854-45b2-97d9-3df2f529f4b4")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR047"
 			(at 119.38 109.22 0)
 			(effects
 				(font
@@ -2484,7 +2603,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a956629-d2f4-44cf-9f11-71ec54cd7fd8")
+			(uuid "1c5bde44-6725-4721-8c70-73eb87310088")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2496,8 +2615,12 @@
 					(reference "#PWR047")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR039")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -2512,7 +2635,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "b05348b9-d82d-497c-861d-c81bcdc986a4")
-		(property "Reference" "C20"
+		(property "Reference" "C23"
 			(at 131.826 107.95 0)
 			(effects
 				(font
@@ -2559,10 +2682,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "028d7e76-76f8-4800-b06e-ee9e05dc4b0e")
+			(uuid "11d96304-cdab-4be4-b4d9-bd0702a90cec")
 		)
 		(pin "1"
-			(uuid "08671d8f-b2f8-4e10-ae50-6ccd358c9bc1")
+			(uuid "79a1615e-56ae-49a7-8f4c-eb169284f92c")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2574,8 +2697,12 @@
 					(reference "C23")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "C20")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "C55")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -2591,7 +2718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf2c5ab7-9ae0-4ca5-b0bc-a65e3a92ca1f")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR046"
 			(at 118.11 130.81 0)
 			(effects
 				(font
@@ -2637,7 +2764,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "86e81f31-1a73-4cf9-96fe-985c50f338e5")
+			(uuid "b3e9e564-6d52-4b32-a928-e6f026864970")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2649,8 +2776,12 @@
 					(reference "#PWR046")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR038")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -2666,7 +2797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb2ed232-32b1-4d31-8b19-7c7fd3fc4048")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR064"
 			(at 128.27 106.68 0)
 			(effects
 				(font
@@ -2712,7 +2843,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec892b5f-44a2-49cd-b513-c4861b1be2b2")
+			(uuid "ae447a3f-6438-465e-8a76-736968660887")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2724,8 +2855,12 @@
 					(reference "#PWR064")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR040")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0139")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -2740,7 +2875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ccdb1109-4531-4a7a-b450-d01463c04191")
-		(property "Reference" "D3"
+		(property "Reference" "D5"
 			(at 145.288 121.666 90)
 			(effects
 				(font
@@ -2831,10 +2966,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ab9df04-d657-4f67-8800-bb624a156589")
+			(uuid "dfee637c-2923-418d-b3d7-8f6701ecda17")
 		)
 		(pin "2"
-			(uuid "72de32c4-230f-4247-8a77-1ff11b109246")
+			(uuid "202c91a5-8ca9-4b94-9775-74bcc69cb019")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2846,8 +2981,12 @@
 					(reference "D5")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "D3")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "D15")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -2864,7 +3003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7e3c193-1756-4500-ae45-470c3e4adfd6")
-		(property "Reference" "R31"
+		(property "Reference" "R37"
 			(at 162.56 90.1699 0)
 			(effects
 				(font
@@ -2946,10 +3085,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "29979c6f-9911-44dc-af9c-93fae18f1793")
+			(uuid "2297d5fc-3e95-404e-a559-b7b5128a990a")
 		)
 		(pin "2"
-			(uuid "263df797-60ce-4bf4-89e9-ca37ba87d16c")
+			(uuid "5615b281-af44-4b91-8d5e-6fb7fee37830")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -2961,8 +3100,12 @@
 					(reference "R37")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R31")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R90")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R83")
 					(unit 1)
 				)
 			)
@@ -2977,7 +3120,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d94b8a4b-ebec-4bd9-ac4d-c3395d6e9851")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR045"
 			(at 111.76 82.55 0)
 			(effects
 				(font
@@ -3022,7 +3165,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "635cbc4c-790a-4e92-ab8a-f3eefccbd4d9")
+			(uuid "dd8461b9-f56c-433f-bcfd-da289ce516a7")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -3034,8 +3177,12 @@
 					(reference "#PWR045")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR037")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0136")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -3051,7 +3198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de23dd38-c315-4a20-9db1-7f6fb767c5f9")
-		(property "Reference" "R24"
+		(property "Reference" "R33"
 			(at 123.19 110.744 90)
 			(effects
 				(font
@@ -3131,10 +3278,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "444a7fcb-22bd-46c8-8028-b1c266a3c7d6")
+			(uuid "c641b6d1-12bd-4e1d-9967-e4fabc218012")
 		)
 		(pin "2"
-			(uuid "4ccb1d31-d3b7-44fe-a419-55cb7dfc361c")
+			(uuid "6a823868-9551-4cdc-9c3b-dbd06035aa6a")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -3146,8 +3293,12 @@
 					(reference "R33")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R24")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R86")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R79")
 					(unit 1)
 				)
 			)
@@ -3164,7 +3315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecc74db0-0d33-49be-b912-c17a260d930e")
-		(property "Reference" "R29"
+		(property "Reference" "R38"
 			(at 162.56 100.3299 0)
 			(effects
 				(font
@@ -3246,10 +3397,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "a21b02f5-44f1-41eb-872b-a5039ed65f02")
+			(uuid "3ea01a08-1e5e-437d-8ddb-a36bbe5cd3f3")
 		)
 		(pin "2"
-			(uuid "675eb1ee-c08d-4d98-bfd5-2ad73cd27a41")
+			(uuid "a8c13737-7448-4725-8079-68ca0df157e3")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -3261,8 +3412,12 @@
 					(reference "R38")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R29")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R91")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R84")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f687af78-f67a-4907-8692-778777e43f36")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR069"
 			(at 160.02 113.03 0)
 			(effects
 				(font
@@ -3324,7 +3479,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "bb39a3b2-760d-425c-b3f1-dbd38415894e")
+			(uuid "bcb16b20-3c30-4afd-a61a-4e5339a184d2")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -3336,8 +3491,12 @@
 					(reference "#PWR069")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "#PWR043")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -3353,7 +3512,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffddb9c0-3321-42f9-a681-990dbbd65f1d")
-		(property "Reference" "R30"
+		(property "Reference" "R36"
 			(at 159.004 114.3 90)
 			(effects
 				(font
@@ -3433,10 +3592,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b94c922-e0ad-4396-9147-52416564c90f")
+			(uuid "477f6a4d-fb02-4e15-9210-2caa15f235d3")
 		)
 		(pin "2"
-			(uuid "162bf1d3-3776-4200-bea7-ad4eb9af0026")
+			(uuid "1fa1306e-6fb1-493d-8cc1-d9776eb7a17f")
 		)
 		(instances
 			(project "valrob-carte-alim-cdf-1"
@@ -3448,8 +3607,12 @@
 					(reference "R36")
 					(unit 1)
 				)
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290/d45c968d-64b1-499a-bee8-06850ed7b82c"
-					(reference "R30")
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/b332dafb-def0-4f90-adff-106c0f93188a"
+					(reference "R89")
+					(unit 1)
+				)
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/007b07d4-119b-4744-aa24-fabc828b541b/f0ee5f2e-86ee-4428-a295-f50dc212690a"
+					(reference "R82")
 					(unit 1)
 				)
 			)
