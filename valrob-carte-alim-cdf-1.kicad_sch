@@ -1024,6 +1024,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -3957,7 +4099,7 @@
 	)
 	(rectangle
 		(start 15.24 119.38)
-		(end 62.23 151.13)
+		(end 63.5 151.13)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3980,7 +4122,7 @@
 		(uuid 390ef116-abd3-4c6b-9064-f9235894b6d0)
 	)
 	(rectangle
-		(start 82.55 173.99)
+		(start 82.55 167.64)
 		(end 114.3 195.58)
 		(stroke
 			(width 0)
@@ -4116,6 +4258,12 @@
 		(uuid "376c7a70-ae4f-4c59-8e64-0f211cb1dda9")
 	)
 	(junction
+		(at 53.34 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4411f5a6-e171-4ad3-86e7-1e47340fd0d7")
+	)
+	(junction
 		(at 123.19 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4146,6 +4294,12 @@
 		(uuid "6b00dc70-8ea8-4672-9520-d000225834c3")
 	)
 	(junction
+		(at 46.99 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7531b906-fe57-42d2-947c-1f466e8bd93b")
+	)
+	(junction
 		(at 43.18 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4162,6 +4316,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e6d025c-2081-4f7b-9d12-660d68d0ec2e")
+	)
+	(junction
+		(at 86.36 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a167a9f4-2518-4012-9657-10b61fe628f1")
 	)
 	(junction
 		(at 71.12 160.02)
@@ -4336,6 +4496,16 @@
 			(type default)
 		)
 		(uuid "11583771-c15f-418b-903d-f0ef41b36f87")
+	)
+	(wire
+		(pts
+			(xy 53.34 138.43) (xy 54.61 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14857372-3068-45dd-8bbd-7358ee2138d1")
 	)
 	(wire
 		(pts
@@ -4749,6 +4919,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 172.72) (xy 86.36 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b7bcd6b-4b5c-4d24-b0a7-b8fb40af6fc6")
+	)
+	(wire
+		(pts
 			(xy 127 44.45) (xy 127 48.26)
 		)
 		(stroke
@@ -4776,6 +4956,16 @@
 			(type default)
 		)
 		(uuid "736e099a-d390-4634-92b7-969e28939011")
+	)
+	(wire
+		(pts
+			(xy 99.06 172.72) (xy 109.22 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "739c8735-0b70-46aa-a398-101482ae56da")
 	)
 	(wire
 		(pts
@@ -5279,6 +5469,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 135.89) (xy 54.61 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6cd0ebf-24b4-4811-92db-fc1ad1638282")
+	)
+	(wire
+		(pts
 			(xy 52.07 162.56) (xy 44.45 162.56)
 		)
 		(stroke
@@ -5417,6 +5617,16 @@
 		)
 		(uuid "fbdca2f4-1dbc-4036-8da7-863165617fdf")
 	)
+	(wire
+		(pts
+			(xy 88.9 172.72) (xy 86.36 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd643fc7-5216-4a90-ad98-e8e187a09a35")
+	)
 	(label "BOOT"
 		(at 184.15 83.82 0)
 		(effects
@@ -5426,6 +5636,16 @@
 			(justify left bottom)
 		)
 		(uuid "1ea6eebf-2662-4837-90f5-ce2cde3f36b6")
+	)
+	(label "BAU"
+		(at 109.22 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "339eb924-da7b-4f2e-92ff-ef8b086ffb2c")
 	)
 	(label "D+"
 		(at 72.39 180.34 180)
@@ -6344,7 +6564,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 93.98 180.34 0)
 			(effects
 				(font
@@ -6371,7 +6591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XUNPU"
+		(property "Manufacturer" "JST"
 			(at 93.98 185.42 0)
 			(effects
 				(font
@@ -6380,7 +6600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "TS-1088-AR02016"
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
 			(at 93.98 185.42 0)
 			(effects
 				(font
@@ -6389,7 +6609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic" "Y"
+		(property "Basic" "Z"
 			(at 93.98 185.42 0)
 			(effects
 				(font
@@ -6398,7 +6618,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C720477"
+		(property "JLCPCB Part #" "C158012"
 			(at 93.98 185.42 0)
 			(effects
 				(font
@@ -6627,6 +6847,216 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 93.98 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3099629a-7592-49ae-a772-7ba96848f6eb")
+		(property "Reference" "SW3"
+			(at 93.98 174.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 93.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 93.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 93.98 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 93.98 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 93.98 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 93.98 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 93.98 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68f55bd2-96d7-4faa-91f7-6994083cf2e0")
+		)
+		(pin "1"
+			(uuid "9793e2eb-c6b8-4b3e-b885-47b886f8c459")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 59.69 138.43 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31222539-4e64-446e-be4e-5475462b1ddf")
+		(property "Reference" "J26"
+			(at 58.928 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 62.23 135.8901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Z"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C158012"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "688ca48a-7174-4cbf-ba6d-d9720c314ffd")
+		)
+		(pin "1"
+			(uuid "109d414e-17c0-4ded-b614-db934079a95a")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "J26")
 					(unit 1)
 				)
 			)
@@ -7532,7 +7962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 93.98 173.99 0)
 			(effects
 				(font
@@ -7559,7 +7989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "XUNPU"
+		(property "Manufacturer" "JST"
 			(at 93.98 179.07 0)
 			(effects
 				(font
@@ -7568,7 +7998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "TS-1088-AR02016"
+		(property "Manufacturer Part Number" "B2B-XH-A(LF)(SN)"
 			(at 93.98 179.07 0)
 			(effects
 				(font
@@ -7577,7 +8007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Basic" "Y"
+		(property "Basic" "Z"
 			(at 93.98 179.07 0)
 			(effects
 				(font
@@ -7586,7 +8016,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C720477"
+		(property "JLCPCB Part #" "C158012"
 			(at 93.98 179.07 0)
 			(effects
 				(font
