@@ -1636,7 +1636,7 @@
 				)
 			)
 		)
-		(property "Component Class" "5V_EFUSE"
+		(property "Component Class" "12V_EFUSE"
 			(at 107.3785 71.12 0)
 			(effects
 				(font
