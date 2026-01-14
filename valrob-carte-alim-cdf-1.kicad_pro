@@ -416,6 +416,10 @@
     [
       "0cc01053-a223-4e8e-b0aa-a1ec618db290",
       "Power"
+    ],
+    [
+      "4469bb82-be42-4e6b-9b3c-f9dcfba48861",
+      "Efuse"
     ]
   ],
   "text_variables": {}
