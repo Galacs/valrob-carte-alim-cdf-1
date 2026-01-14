@@ -562,6 +562,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_TVS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bidirectional transient-voltage-suppression diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -2365,6 +2515,12 @@
 		(uuid "16ff5f1e-2057-4bfe-8549-36b9eaebb479")
 	)
 	(junction
+		(at 38.1 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ffc4bfd-6bee-4e9b-8d65-3fb7dbb55088")
+	)
+	(junction
 		(at 146.05 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3462,6 +3618,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 62.23) (xy 49.53 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "760bf848-49ef-4ac2-a505-8bfb9db7769d")
+	)
+	(wire
+		(pts
 			(xy 25.4 40.64) (xy 67.31 40.64)
 		)
 		(stroke
@@ -3552,7 +3718,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 68.58) (xy 25.4 62.23)
+			(xy 25.4 63.5) (xy 25.4 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3712,7 +3878,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 62.23) (xy 49.53 62.23)
+			(xy 25.4 62.23) (xy 38.1 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3912,7 +4078,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 78.74) (xy 25.4 80.01)
+			(xy 25.4 73.66) (xy 25.4 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4162,6 +4328,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 72.39) (xy 38.1 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1c6055-af9b-4a50-bd0e-099522c6d0db")
+	)
+	(wire
+		(pts
 			(xy 161.29 139.7) (xy 161.29 138.43)
 		)
 		(stroke
@@ -4259,6 +4435,16 @@
 			(type default)
 		)
 		(uuid "daae84a8-267f-4af4-9698-36917bb1d8ce")
+	)
+	(wire
+		(pts
+			(xy 38.1 62.23) (xy 38.1 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbc6f25f-e142-4512-88a0-cf80e3fc1a1f")
 	)
 	(wire
 		(pts
@@ -6286,7 +6472,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery")
-		(at 25.4 73.66 0)
+		(at 25.4 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6295,7 +6481,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cb92dcb-043d-47ea-ad6d-4088751e8c76")
 		(property "Reference" "BT1"
-			(at 29.21 71.8184 0)
+			(at 29.21 66.7384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6304,7 +6490,7 @@
 			)
 		)
 		(property "Value" "18v"
-			(at 29.21 74.3584 0)
+			(at 29.21 69.2784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6313,7 +6499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 72.136 90)
+			(at 25.4 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6322,7 +6508,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 72.136 90)
+			(at 25.4 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6331,7 +6517,7 @@
 			)
 		)
 		(property "Description" "Multiple-cell battery"
-			(at 25.4 73.66 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6340,7 +6526,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 25.4 73.66 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6349,7 +6535,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 25.4 73.66 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6358,7 +6544,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 25.4 73.66 0)
+			(at 25.4 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7180,6 +7366,113 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS")
+		(at 38.1 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f1fe40a-4aa0-4916-b1b7-3583199abf2a")
+		(property "Reference" "D2"
+			(at 40.64 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 40.64 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 38.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 38.1 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "E"
+			(at 38.1 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C19077549"
+			(at 38.1 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 38.1 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SMAJ33CA"
+			(at 38.1 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e119417d-b5d5-48f9-b9a3-7fdcef1de7e7")
+		)
+		(pin "2"
+			(uuid "6ef5c73a-c5d1-42df-a74e-f091707ab5e2")
+		)
+		(instances
+			(project ""
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 81.28 134.62 0)
 		(unit 1)
@@ -7898,7 +8191,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 80.01 0)
+		(at 25.4 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7906,7 +8199,7 @@
 		(dnp no)
 		(uuid "59a7f0d9-8f1d-4335-9520-793ee758cf9d")
 		(property "Reference" "#PWR015"
-			(at 25.4 86.36 0)
+			(at 25.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +8208,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.464 81.534 0)
+			(at 29.464 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,7 +8217,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 80.01 0)
+			(at 25.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,7 +8226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 80.01 0)
+			(at 25.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7942,7 +8235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 80.01 0)
+			(at 25.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8490,6 +8783,72 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6740e5c0-eef6-44fa-9e03-92775e44ce5f")
+		(property "Reference" "#PWR036"
+			(at 38.1 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 42.164 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c556f8b-1ebd-4007-b2d1-1599646899e8")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
