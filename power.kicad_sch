@@ -3206,7 +3206,7 @@
 	)
 	(sheet
 		(at 134.62 39.37)
-		(size 12.7 13.97)
+		(size 12.7 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3230,12 +3230,53 @@
 			)
 		)
 		(property "Sheetfile" "efuse.kicad_sch"
-			(at 134.62 53.9246 0)
+			(at 134.62 47.5746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "EN" input
+			(at 134.62 44.45 180)
+			(uuid "fb8ba95f-d3f1-4675-a813-4dcbd2fdb4b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PG" output
+			(at 147.32 44.45 0)
+			(uuid "023cd4f4-61b7-49e7-87ec-00af60d53b66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" input
+			(at 147.32 40.64 0)
+			(uuid "76c1019e-478c-490f-a8ca-a37dfa6f49d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IN" input
+			(at 134.62 40.64 180)
+			(uuid "008c529e-7bf9-49b0-a6ae-b8927196fe65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
