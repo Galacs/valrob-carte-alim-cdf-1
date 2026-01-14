@@ -6217,7 +6217,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C1525"
+		(property "JLCPCB Part #" "C307331"
 			(at 127 52.07 0)
 			(effects
 				(font
@@ -6235,7 +6235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL05B104KO5NNNC"
+		(property "Manufacturer Part Number" "CL05B104KB54PNC"
 			(at 127 52.07 0)
 			(effects
 				(font
