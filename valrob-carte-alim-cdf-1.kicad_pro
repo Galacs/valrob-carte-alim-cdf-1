@@ -478,6 +478,18 @@
     [
       "d45c968d-64b1-499a-bee8-06850ed7b82c",
       "Efuse 5V 5A"
+    ],
+    [
+      "007b07d4-119b-4744-aa24-fabc828b541b",
+      "Connectors"
+    ],
+    [
+      "23413aed-8ca3-45a8-a057-9391688fcaa2",
+      "Efuse 5V 5A 1"
+    ],
+    [
+      "1e5e9d25-7b17-450b-be0c-a1c8745b97c8",
+      "Efuse 5V 5A 2"
     ]
   ],
   "text_variables": {}
