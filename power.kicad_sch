@@ -2776,6 +2776,12 @@
 		(uuid "0e93a6f1-72ca-4b96-b1c9-167f48b507ff")
 	)
 	(junction
+		(at 186.69 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12afd417-8e12-43c2-8c19-29a37ed92a38")
+	)
+	(junction
 		(at 167.64 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3040,6 +3046,12 @@
 		(uuid "e60d5e64-d208-4f3e-84d8-29ba1972e0e2")
 	)
 	(junction
+		(at 186.69 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e97227f9-4518-414b-b843-be037db2a85e")
+	)
+	(junction
 		(at 82.55 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3099,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 123.19) (xy 190.5 123.19)
+			(xy 182.88 123.19) (xy 186.69 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3469,7 +3481,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 77.47) (xy 190.5 77.47)
+			(xy 182.88 77.47) (xy 186.69 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3696,6 +3708,16 @@
 			(type default)
 		)
 		(uuid "52521b9e-22a4-4083-8618-660a68a16ada")
+	)
+	(wire
+		(pts
+			(xy 186.69 123.19) (xy 190.5 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "547379ab-0f4b-4861-a8d0-21b9f7177c3d")
 	)
 	(wire
 		(pts
@@ -4756,6 +4778,16 @@
 			(type default)
 		)
 		(uuid "e7c1f180-2307-46b8-aedd-5454301aeafd")
+	)
+	(wire
+		(pts
+			(xy 186.69 77.47) (xy 190.5 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e87d9dec-43d5-4d76-92ad-cb8b7d265fa2")
 	)
 	(wire
 		(pts
@@ -7318,6 +7350,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 186.69 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "41f029b9-377d-458b-80c7-e0e4631640e3")
+		(property "Reference" "TP4"
+			(at 184.658 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 189.23 75.4379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 186.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bcdf5c8-c2e7-4e6f-81fb-7e42434254f7")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 102.87 128.27 0)
 		(unit 1)
@@ -9499,6 +9598,73 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 186.69 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d6e787b-9b55-4d00-b15a-f42633fd9b6f")
+		(property "Reference" "TP2"
+			(at 184.658 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 189.23 121.1579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 186.69 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61774a42-472d-4c75-bc20-4452a9edea55")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
