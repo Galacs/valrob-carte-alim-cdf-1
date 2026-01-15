@@ -1623,6 +1623,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2412,7 +2595,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -45.72 17.78 0)
+					(at -45.72 12.7 0)
 					(length 2.54)
 					(name "GPIO9/TOUCH9/ADC1_CH8/FSPIHD/SUBSPIHD"
 						(effects
@@ -2430,7 +2613,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -45.72 15.24 0)
+					(at -45.72 10.16 0)
 					(length 2.54)
 					(name "MTDI/GPIO41/CLK_OUT1"
 						(effects
@@ -2448,7 +2631,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -45.72 12.7 0)
+					(at -45.72 7.62 0)
 					(length 2.54)
 					(name "MTMS/GPIO42"
 						(effects
@@ -4159,7 +4342,7 @@
 	)
 	(text "EN RC delay"
 		(exclude_from_sim no)
-		(at 64.008 61.976 0)
+		(at 87.376 57.658 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4226,6 +4409,16 @@
 			)
 		)
 		(uuid "cdf4ab1c-e8a8-4d0c-b7a3-75c3f57fb7d3")
+	)
+	(text "General power status"
+		(exclude_from_sim no)
+		(at 76.2 82.296 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dc5c3f6e-ad21-488c-8f54-2a37f1ac4cfa")
 	)
 	(junction
 		(at 35.56 125.73)
@@ -4312,6 +4505,12 @@
 		(uuid "8c6536e9-fb73-44d3-a910-4c0eac3e85b2")
 	)
 	(junction
+		(at 57.15 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "958d4c09-ab75-487a-ba77-49d6f43893d3")
+	)
+	(junction
 		(at 53.34 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4382,10 +4581,6 @@
 		(uuid "790512cc-4686-45a5-8196-9c20c902e46d")
 	)
 	(no_connect
-		(at 91.44 83.82)
-		(uuid "7f9cf751-ee9f-45f5-af17-392cf0568f2f")
-	)
-	(no_connect
 		(at 91.44 78.74)
 		(uuid "8988e59d-86af-461d-9493-38d25c23ef9b")
 	)
@@ -4396,16 +4591,6 @@
 	(no_connect
 		(at 25.4 138.43)
 		(uuid "cfffd2b2-0d5c-48cd-a980-84b99516ef8b")
-	)
-	(wire
-		(pts
-			(xy 82.55 91.44) (xy 91.44 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01ba143a-183c-40b5-830c-4c84670a92f6")
 	)
 	(wire
 		(pts
@@ -4486,6 +4671,16 @@
 			(type default)
 		)
 		(uuid "0f8997c7-cfcb-4e1d-a158-660f56492826")
+	)
+	(wire
+		(pts
+			(xy 57.15 64.77) (xy 57.15 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10345c0d-7bee-4519-8cbb-96134a402074")
 	)
 	(wire
 		(pts
@@ -4626,6 +4821,16 @@
 			(type default)
 		)
 		(uuid "29418044-2794-4bb7-a301-71bd62708a42")
+	)
+	(wire
+		(pts
+			(xy 57.15 102.87) (xy 57.15 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2989038b-e8ff-4bc1-9ae2-600ccd7a73b5")
 	)
 	(wire
 		(pts
@@ -4989,6 +5194,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 92.71) (xy 57.15 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d0e87b-fdcc-49ee-ba64-5f24dedbf079")
+	)
+	(wire
+		(pts
 			(xy 218.44 142.24) (xy 227.33 142.24)
 		)
 		(stroke
@@ -5026,16 +5241,6 @@
 			(type default)
 		)
 		(uuid "6b7bcd6b-4b5c-4d24-b0a7-b8fb40af6fc6")
-	)
-	(wire
-		(pts
-			(xy 82.55 86.36) (xy 91.44 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dbd3ae2-b31c-4022-891c-cda159971527")
 	)
 	(wire
 		(pts
@@ -5149,6 +5354,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 82.55) (xy 57.15 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dbacddf-8ad8-4bac-87ac-1356cef02b8d")
+	)
+	(wire
+		(pts
 			(xy 182.88 104.14) (xy 187.96 104.14)
 		)
 		(stroke
@@ -5206,6 +5421,16 @@
 			(type default)
 		)
 		(uuid "957be068-cdd0-4bc5-a9aa-24c6cc9ba545")
+	)
+	(wire
+		(pts
+			(xy 57.15 83.82) (xy 57.15 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d01da6-af2a-498a-a2d6-a680aec51115")
 	)
 	(wire
 		(pts
@@ -5269,6 +5494,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 93.98) (xy 91.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a975bf3d-6dba-4c40-a17e-b719ad20528b")
+	)
+	(wire
+		(pts
 			(xy 209.55 60.96) (xy 203.2 60.96)
 		)
 		(stroke
@@ -5276,6 +5511,16 @@
 			(type default)
 		)
 		(uuid "ab1862da-8753-4317-aa8e-f88cafe2adae")
+	)
+	(wire
+		(pts
+			(xy 57.15 73.66) (xy 57.15 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac9ce0e0-43d0-40c5-9895-cc342efa1a99")
 	)
 	(wire
 		(pts
@@ -5329,16 +5574,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 88.9) (xy 91.44 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b973b76b-1351-40a4-85b8-693811dd597f")
-	)
-	(wire
-		(pts
 			(xy 182.88 119.38) (xy 187.96 119.38)
 		)
 		(stroke
@@ -5366,6 +5601,16 @@
 			(type default)
 		)
 		(uuid "bba7436c-0884-4af2-a8d5-fab9d0e8d8cd")
+	)
+	(wire
+		(pts
+			(xy 82.55 91.44) (xy 91.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bda593ca-d295-483f-b0b4-d2be25b6678e")
 	)
 	(wire
 		(pts
@@ -5609,6 +5854,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 83.82) (xy 91.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2474ca0-9a34-4bc9-bc9d-7778316ca424")
+	)
+	(wire
+		(pts
 			(xy 17.78 135.89) (xy 25.4 135.89)
 		)
 		(stroke
@@ -5759,6 +6014,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 96.52) (xy 91.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f834595a-808f-49d1-9e24-4cee7ee861f8")
+	)
+	(wire
+		(pts
 			(xy 86.36 185.42) (xy 88.9 185.42)
 		)
 		(stroke
@@ -5867,16 +6132,6 @@
 		)
 		(uuid "1ea6eebf-2662-4837-90f5-ce2cde3f36b6")
 	)
-	(label "PG_12V"
-		(at 82.55 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26245e34-a66a-496d-a40d-aa540ba33f21")
-	)
 	(label "BAU"
 		(at 109.22 172.72 180)
 		(effects
@@ -5886,6 +6141,26 @@
 			(justify right bottom)
 		)
 		(uuid "339eb924-da7b-4f2e-92ff-ef8b086ffb2c")
+	)
+	(label "PG_12V"
+		(at 82.55 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35f23348-8bbb-4990-90af-bbdcd0807850")
+	)
+	(label "PG_5V"
+		(at 82.55 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38934103-4645-46cc-b6aa-edec5290c8f7")
 	)
 	(label "BAU"
 		(at 82.55 134.62 0)
@@ -5906,16 +6181,6 @@
 			(justify right bottom)
 		)
 		(uuid "4e2084fd-78c0-494e-aa30-0f5b3553478e")
-	)
-	(label "Vsense"
-		(at 82.55 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51b125dd-da01-4bec-be64-ee11041408ef")
 	)
 	(label "CANH"
 		(at 46.99 135.89 0)
@@ -5956,16 +6221,6 @@
 			(justify left bottom)
 		)
 		(uuid "6e407a44-ab4b-4e6c-acb1-30385419025f")
-	)
-	(label "PG_5V"
-		(at 82.55 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d1bca14-520c-41a5-b380-a376c651fff2")
 	)
 	(label "CHIP_PU"
 		(at 82.55 68.58 0)
@@ -6046,6 +6301,16 @@
 			(justify right bottom)
 		)
 		(uuid "a74bd9da-f091-4a1a-8f8b-9e31cd2cd640")
+	)
+	(label "Vsense"
+		(at 82.55 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac1b9d7a-290f-460e-8634-7cc642665fbc")
 	)
 	(label "U0TXD"
 		(at 185.42 68.58 0)
@@ -8033,6 +8298,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 57.15 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42a94554-47d2-4e25-9763-2f7d4d5140ea")
+		(property "Reference" "#PWR055"
+			(at 57.15 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e79e1017-c695-4c8b-8d6e-d6e5bda30a01")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Pers:H5VU10U")
 		(at 55.88 167.64 270)
 		(unit 1)
@@ -8324,6 +8656,121 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 57.15 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f7d8169-3af6-4011-be2f-f4ba8b3aaa4e")
+		(property "Reference" "D14"
+			(at 60.452 88.646 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RED"
+			(at 60.452 91.186 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 57.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 57.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 57.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Y"
+			(at 57.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C2286"
+			(at 57.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec "
+			(at 57.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "KT-0603R"
+			(at 57.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a40a1751-0ae0-4321-ab75-52215e286320")
+		)
+		(pin "1"
+			(uuid "8b175f33-364a-4c3a-b5cb-19fe3ee15a94")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -8945,6 +9392,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 57.15 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "672d5b6e-f61c-49b5-abf5-b2c613f74ca3")
+		(property "Reference" "R11"
+			(at 59.69 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5k1"
+			(at 59.69 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 58.928 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Y"
+			(at 57.15 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C25905"
+			(at 57.15 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Uniroyal Elec"
+			(at 57.15 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "0402WGF5101TCE"
+			(at 57.15 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d0f9b6c-dff7-41d5-8475-16c0f7794abe")
+		)
+		(pin "2"
+			(uuid "aa6fb1fc-46ed-46d1-b469-247431d89249")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 71.12 160.02 180)
 		(unit 1)
@@ -9388,6 +9941,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 57.15 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7727dcdc-924c-4f47-a18e-4c4aa80de651")
+		(property "Reference" "R10"
+			(at 59.69 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5k1"
+			(at 59.69 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 58.928 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Y"
+			(at 57.15 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C25905"
+			(at 57.15 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Uniroyal Elec"
+			(at 57.15 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "0402WGF5101TCE"
+			(at 57.15 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "810f7679-0fbc-49f2-b7ee-579e4efa7b65")
+		)
+		(pin "2"
+			(uuid "c3bf18bf-71f9-4367-a3fd-3aa041288cf1")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 127 52.07 0)
 		(unit 1)
@@ -9593,6 +10252,72 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 57.15 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "851f6dff-900c-471a-aba7-dd2638ad2cc6")
+		(property "Reference" "#PWR054"
+			(at 57.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 56.642 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 57.15 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5101f7f6-4b48-41b4-b9f3-91b06dea3cd3")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -10517,6 +11242,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -11130,6 +11856,121 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 57.15 78.74 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dec15697-2005-4959-a5df-cc22962fa845")
+		(property "Reference" "D7"
+			(at 64.77 78.8034 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 64.77 81.3434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec "
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "KT-0805G"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic" "Y"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C2297"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e379ff74-ea7e-43ed-bdd6-042560a72cea")
+		)
+		(pin "2"
+			(uuid "1370d85c-ee4f-4fcc-bbbf-2d05fc0c29dc")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "D7")
 					(unit 1)
 				)
 			)
