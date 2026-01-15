@@ -2866,6 +2866,18 @@
 		(uuid "3ee4f2ec-d9d1-459a-938b-453624bb689e")
 	)
 	(junction
+		(at 194.31 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "487d1952-9b18-4cae-aef8-29ab2ab22d10")
+	)
+	(junction
+		(at 30.48 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48ebe7f8-1497-4998-94a4-b4d09896ea3b")
+	)
+	(junction
 		(at 92.71 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3020,6 +3032,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb0cfca7-5a32-48ff-b152-43bc95201ca0")
+	)
+	(junction
+		(at 194.31 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7b3c65d-e1a9-4151-a189-f7ed810fa44c")
 	)
 	(junction
 		(at 179.07 133.35)
@@ -3251,6 +3269,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 123.19) (xy 196.85 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b3a2f78-789a-4efd-9333-2739dc4a5e17")
+	)
+	(wire
+		(pts
 			(xy 167.64 82.55) (xy 167.64 77.47)
 		)
 		(stroke
@@ -3348,6 +3376,16 @@
 			(type default)
 		)
 		(uuid "2d355e7b-98f7-41b8-88f3-202538473647")
+	)
+	(wire
+		(pts
+			(xy 194.31 77.47) (xy 196.85 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfff24b-5399-4dfa-a04e-5c0ae875d12f")
 	)
 	(wire
 		(pts
@@ -3811,7 +3849,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 111.76) (xy 39.37 111.76)
+			(xy 26.67 111.76) (xy 30.48 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4331,7 +4369,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 77.47) (xy 196.85 77.47)
+			(xy 190.5 77.47) (xy 194.31 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4541,6 +4579,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 111.76) (xy 39.37 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6365813-bdb6-4b31-bc41-33fee14f4c22")
+	)
+	(wire
+		(pts
 			(xy 175.26 124.46) (xy 175.26 123.19)
 		)
 		(stroke
@@ -4681,7 +4729,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 123.19) (xy 196.85 123.19)
+			(xy 190.5 123.19) (xy 194.31 123.19)
 		)
 		(stroke
 			(width 0)
@@ -8269,6 +8317,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 194.31 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5aea3a12-bad3-450c-b15b-233a867f55b2")
+		(property "Reference" "#FLG07"
+			(at 194.31 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 194.31 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 194.31 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71b595c1-838a-4d5d-8163-686179ec082c")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 142.24 147.32 0)
 		(unit 1)
@@ -8539,6 +8654,73 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 194.31 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60d66233-aa91-4eb8-9277-794053635d04")
+		(property "Reference" "#FLG06"
+			(at 194.31 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 194.31 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 194.31 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "585aefb1-4a32-4489-a1b7-d1fe06ee7277")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -10030,6 +10212,73 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 30.48 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab43ae41-5bc1-4d03-a98a-30cd2047e9d3")
+		(property "Reference" "#FLG04"
+			(at 30.48 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 30.48 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92f3eeac-79b2-4b3c-88dc-9c384ec6fe79")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
