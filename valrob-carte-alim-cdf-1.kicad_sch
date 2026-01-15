@@ -9266,6 +9266,42 @@
 				(hide yes)
 			)
 		)
+		(property "Basic" "Z"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C2913204"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Espressif"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ESP32-S3-WROOM-1-N8R2"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "32"
 			(uuid "1c3ce73e-1247-4e6d-b45e-bf69e15634c7")
 		)
@@ -10691,7 +10727,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C1525"
+		(property "JLCPCB Part #" "C307331"
 			(at 127 181.61 0)
 			(effects
 				(font
@@ -10709,7 +10745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL05B104KO5NNNC"
+		(property "Manufacturer Part Number" "CL05B104KB54PNC"
 			(at 127 181.61 0)
 			(effects
 				(font
