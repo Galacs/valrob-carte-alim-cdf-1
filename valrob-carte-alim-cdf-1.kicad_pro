@@ -262,7 +262,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -277,6 +277,38 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgb(132, 132, 132)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "ILM",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "PWR",
+        "pcb_color": "rgb(255, 3, 17)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "UART",
+        "pcb_color": "rgb(22, 5, 255)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.3,
+        "name": "USB",
+        "pcb_color": "rgb(34, 255, 22)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -284,7 +316,40 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+*"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "/U0*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/ESP_D*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/D+"
+      },
+      {
+        "netclass": "ILM",
+        "pattern": "ILM*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
