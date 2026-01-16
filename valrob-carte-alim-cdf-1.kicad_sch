@@ -2616,6 +2616,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_Espressif:ESP32-S3-WROOM-1"
 			(pin_names
 				(offset 1.016)
@@ -4287,6 +4394,18 @@
 		)
 	)
 	(rectangle
+		(start 15.24 96.52)
+		(end 41.91 116.84)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 042456e4-9e89-43f9-bb8a-2978a34cc004)
+	)
+	(rectangle
 		(start 15.24 119.38)
 		(end 63.5 151.13)
 		(stroke
@@ -4355,6 +4474,18 @@
 			)
 		)
 		(uuid "1a26539a-340d-460b-a987-95e01c62d75b")
+	)
+	(text "Mounting"
+		(exclude_from_sim no)
+		(at 26.416 113.03 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "3160740f-ea87-4183-a295-9bf3b14861b3")
 	)
 	(text "UART"
 		(exclude_from_sim no)
@@ -4425,6 +4556,12 @@
 			)
 		)
 		(uuid "dc5c3f6e-ad21-488c-8f54-2a37f1ac4cfa")
+	)
+	(junction
+		(at 25.4 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05a08c9c-7985-4742-a560-368deb83bb9f")
 	)
 	(junction
 		(at 35.56 125.73)
@@ -4499,6 +4636,12 @@
 		(uuid "86edf8b9-9b5e-420f-95c5-8c8da0c282f8")
 	)
 	(junction
+		(at 30.48 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "870c172f-53a0-4183-9f64-633be0f00bab")
+	)
+	(junction
 		(at 41.91 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4553,6 +4696,12 @@
 		(uuid "da6c83e2-9827-4058-ac02-1626de5de0e2")
 	)
 	(junction
+		(at 35.56 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db3e611e-e27d-452d-9e8f-ad26d84077fe")
+	)
+	(junction
 		(at 135.89 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4605,6 +4754,16 @@
 			(type default)
 		)
 		(uuid "038d2a07-955e-4549-a084-ca7c0339ae5e")
+	)
+	(wire
+		(pts
+			(xy 38.1 107.95) (xy 35.56 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060efd13-2362-40e9-92f1-f61cbae96ccb")
 	)
 	(wire
 		(pts
@@ -4715,6 +4874,16 @@
 			(type default)
 		)
 		(uuid "155b31ba-1387-4a1e-bc53-8c3b97e3f549")
+	)
+	(wire
+		(pts
+			(xy 30.48 107.95) (xy 30.48 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17657c16-9315-48ba-948f-ab28b35a23d1")
 	)
 	(wire
 		(pts
@@ -4995,6 +5164,16 @@
 			(type default)
 		)
 		(uuid "47e62ff4-03bf-41cd-9a97-e0694ecdd378")
+	)
+	(wire
+		(pts
+			(xy 20.32 107.95) (xy 25.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "488f1d15-4e1a-4a32-858c-9214fdd61681")
 	)
 	(wire
 		(pts
@@ -5288,6 +5467,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 107.95) (xy 20.32 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "749aabc1-335d-41ee-8651-19723fe481d9")
+	)
+	(wire
+		(pts
 			(xy 35.56 125.73) (xy 35.56 128.27)
 		)
 		(stroke
@@ -5365,6 +5554,16 @@
 			(type default)
 		)
 		(uuid "8dbacddf-8ad8-4bac-87ac-1356cef02b8d")
+	)
+	(wire
+		(pts
+			(xy 38.1 107.95) (xy 38.1 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9117ff3d-a0f4-4aa7-8e31-89061043ecbf")
 	)
 	(wire
 		(pts
@@ -5618,6 +5817,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 107.95) (xy 35.56 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be7cbb98-552a-4d38-b636-002cd9af5e6b")
+	)
+	(wire
+		(pts
 			(xy 34.29 125.73) (xy 35.56 125.73)
 		)
 		(stroke
@@ -5858,6 +6067,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 107.95) (xy 35.56 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1111e77-e300-40a8-978a-ed528d57259b")
+	)
+	(wire
+		(pts
 			(xy 57.15 83.82) (xy 91.44 83.82)
 		)
 		(stroke
@@ -5888,6 +6107,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 107.95) (xy 30.48 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e535e102-3452-4e13-a6eb-4f312c3e0420")
+	)
+	(wire
+		(pts
 			(xy 46.99 135.89) (xy 54.61 135.89)
 		)
 		(stroke
@@ -5915,6 +6144,16 @@
 			(type default)
 		)
 		(uuid "e8653399-b42d-4727-af62-6f3708f3b6a6")
+	)
+	(wire
+		(pts
+			(xy 25.4 107.95) (xy 25.4 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8763bec-3adb-4915-b848-6be7eb174ca0")
 	)
 	(wire
 		(pts
@@ -7542,6 +7781,71 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "192d44c5-46a3-4794-94be-1aff682b729c")
+		(property "Reference" "#PWR0130"
+			(at 38.1 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.846 113.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa051bb0-a9af-4668-8247-955ff51e8dcd")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -9670,6 +9974,138 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 25.4 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "779bdaaa-20a7-462f-8fb1-14237e10913d")
+		(property "Reference" "H2"
+			(at 24.13 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 29.21 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 25.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 25.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a756a3f3-2d9d-4861-af9d-5703ae3d40b9")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7dccce42-7cf3-452b-bdcd-a76f36b5ce31")
+		(property "Reference" "H3"
+			(at 29.21 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 34.29 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 30.48 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "468c1313-1e1b-45e0-a6d2-50cfbb1fcf77")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 127 52.07 0)
 		(unit 1)
@@ -10119,6 +10555,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 35.56 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "90293a49-3cab-4032-ba69-c3cf8d8e38d4")
+		(property "Reference" "H4"
+			(at 34.29 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 39.37 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 35.56 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 35.56 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "745b0857-a700-418f-9c01-661fa34862ae")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 73.66 68.58 90)
 		(mirror x)
@@ -10217,6 +10719,72 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 20.32 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9bba44de-ebfa-42a1-97c4-287fe1653d42")
+		(property "Reference" "H1"
+			(at 19.05 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 24.13 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 20.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 20.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57540a38-dc49-4fba-a15a-a30b72d09b81")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2"
+					(reference "H1")
 					(unit 1)
 				)
 			)
