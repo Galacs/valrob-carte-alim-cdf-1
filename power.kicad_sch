@@ -5448,71 +5448,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 107.95 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ee0986b-9bdd-4cd4-99fe-ae8130d72fdc")
-		(property "Reference" "#PWR035"
-			(at 107.95 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 107.696 125.476 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 107.95 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aa95fe17-7004-4be2-9217-075ea96d98a7")
-		)
-		(instances
-			(project "valrob-carte-alim-cdf-1"
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 104.14 137.16 0)
 		(unit 1)
@@ -7576,71 +7511,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 107.95 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4343d807-dc59-488b-ac55-b8c54d77769f")
-		(property "Reference" "#PWR034"
-			(at 107.95 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 107.696 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5599846f-fa5d-4a95-9e00-efc2e71081d7")
-		)
-		(instances
-			(project "valrob-carte-alim-cdf-1"
-				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 116.84 46.99 0)
 		(mirror x)
@@ -8079,6 +7949,72 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 107.95 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55fbb72e-584d-4f96-ba6c-23c4da02d202")
+		(property "Reference" "#PWR035"
+			(at 107.95 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 107.442 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 107.95 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b49155d3-4e62-4b4b-a717-28548527643f")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -11287,6 +11223,72 @@
 			(project "valrob-carte-alim-cdf-1"
 				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 107.95 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d904e440-89ed-4535-809d-84380d206c4e")
+		(property "Reference" "#PWR034"
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 107.442 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aff54d9-4fc7-45ef-9730-7aa9462b1459")
+		)
+		(instances
+			(project "valrob-carte-alim-cdf-1"
+				(path "/8d7b287d-627f-46aa-8c27-0b5ed29ab4a2/0cc01053-a223-4e8e-b0aa-a1ec618db290"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
