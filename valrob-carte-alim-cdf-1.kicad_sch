@@ -2877,14 +2877,14 @@
 				(pin bidirectional line
 					(at -45.72 20.32 0)
 					(length 2.54)
-					(name "GPIO16/U0CTS/ADC2_CH5/XTAL_32K_N"
+					(name "GPIO17/U1TXD/ADC2_CH6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3419,14 +3419,14 @@
 				(pin bidirectional line
 					(at 45.72 -17.78 180)
 					(length 2.54)
-					(name "GPIO17/U1TXD/ADC2_CH6"
+					(name "GPIO16/U0CTS/ADC2_CH5/XTAL_32K_N"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4803,16 +4803,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 137.16) (xy 187.96 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0619a9a5-267c-4dec-9564-f7e480e7ce2f")
-	)
-	(wire
-		(pts
 			(xy 209.55 59.69) (xy 209.55 60.96)
 		)
 		(stroke
@@ -5303,6 +5293,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 137.16) (xy 187.96 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "519a2770-787d-4f7b-8245-897c77410fbb")
+	)
+	(wire
+		(pts
 			(xy 55.88 162.56) (xy 55.88 163.83)
 		)
 		(stroke
@@ -5723,6 +5723,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 134.62) (xy 187.96 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d8fa4e-9064-4de7-a846-43427fd6a4e6")
+	)
+	(wire
+		(pts
 			(xy 144.78 176.53) (xy 144.78 177.8)
 		)
 		(stroke
@@ -6140,16 +6150,6 @@
 			(type default)
 		)
 		(uuid "e2c9280e-dfdc-4c61-8a69-e61f93c262bb")
-	)
-	(wire
-		(pts
-			(xy 182.88 134.62) (xy 187.96 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2e65b63-3137-435b-bbf3-cba1d3696bc4")
 	)
 	(wire
 		(pts
@@ -6663,28 +6663,6 @@
 			)
 		)
 	)
-	(global_label "EN_5V_2"
-		(shape output)
-		(at 187.96 134.62 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0487d47a-9a25-48bf-a3c9-c936fee053eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.928 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "EN_12V_3"
 		(shape output)
 		(at 187.96 109.22 0)
@@ -6698,6 +6676,28 @@
 		(uuid "05563e3e-fd37-40b6-b119-8647378df995")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.1375 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PG_5V_2"
+		(shape input)
+		(at 187.96 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0eab333b-ca81-4aab-aa34-f2679d9adb47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.928 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6949,28 +6949,6 @@
 			)
 		)
 	)
-	(global_label "PG_5V_2"
-		(shape input)
-		(at 187.96 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "afcf970b-c5a8-46e3-845a-5a7796bd8df8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.928 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PG_12V_4"
 		(shape input)
 		(at 187.96 121.92 0)
@@ -7028,6 +7006,28 @@
 		(uuid "dc58dc69-94f7-4bb5-80bf-8c3534b32ffa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.6818 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EN_5V_2"
+		(shape output)
+		(at 187.96 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc86ec9e-96fe-4a5f-9b20-6c7052da0a16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.928 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
