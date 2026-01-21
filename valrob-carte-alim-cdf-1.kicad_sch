@@ -5213,6 +5213,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 91.44) (xy 91.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c1c785-b69f-4006-9b7f-553fd687f5f1")
+	)
+	(wire
+		(pts
 			(xy 82.55 137.16) (xy 91.44 137.16)
 		)
 		(stroke
@@ -5883,13 +5893,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 91.44) (xy 91.44 91.44)
+			(xy 82.55 96.52) (xy 91.44 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bda593ca-d295-483f-b0b4-d2be25b6678e")
+		(uuid "bdc4cd82-438f-4a6d-b6be-5b71441d4ac8")
 	)
 	(wire
 		(pts
@@ -6273,16 +6283,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 91.44 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f834595a-808f-49d1-9e24-4cee7ee861f8")
-	)
-	(wire
-		(pts
 			(xy 86.36 185.42) (xy 88.9 185.42)
 		)
 		(stroke
@@ -6410,16 +6410,6 @@
 			(justify right bottom)
 		)
 		(uuid "339eb924-da7b-4f2e-92ff-ef8b086ffb2c")
-	)
-	(label "PG_12V"
-		(at 82.55 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35f23348-8bbb-4990-90af-bbdcd0807850")
 	)
 	(label "PG_5V"
 		(at 82.55 93.98 0)
@@ -6561,16 +6551,6 @@
 		)
 		(uuid "a74bd9da-f091-4a1a-8f8b-9e31cd2cd640")
 	)
-	(label "Vsense"
-		(at 82.55 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac1b9d7a-290f-460e-8634-7cc642665fbc")
-	)
 	(label "BAU"
 		(at 82.55 139.7 0)
 		(effects
@@ -6580,6 +6560,16 @@
 			(justify left bottom)
 		)
 		(uuid "b6b6a229-e7ed-4ba6-a93b-56d7508491a8")
+	)
+	(label "PG_12V"
+		(at 82.55 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c608fd1d-ddab-4724-b02b-7c314cf53857")
 	)
 	(label "U0TXD"
 		(at 185.42 68.58 0)
@@ -6620,6 +6610,16 @@
 			(justify right bottom)
 		)
 		(uuid "e55085cc-6057-42c5-8085-23d4482783a8")
+	)
+	(label "Vsense"
+		(at 82.55 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5ec6c7e-88c5-4d42-a9ae-ecb72edfe7f3")
 	)
 	(label "ESP_D+"
 		(at 191.77 76.2 180)
