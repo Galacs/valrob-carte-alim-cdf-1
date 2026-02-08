@@ -134,24 +134,31 @@ float get_batt_volotage() {
 }
 
 PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
+PowerChannel Channel_5v_2(EN_5V_2_PIN, PG_5V_2_PIN, ILM_5V_2_PIN, "+5V 5A 2");
 
-static const PowerChannel* ems_dis_channels[] = {&Channel_5v_1};
+PowerChannel Channel_12v_1(EN_12V_1_PIN, PG_12V_1_PIN, ILM_12V_1_PIN, "+12V 5A 1");
+PowerChannel Channel_12v_2(EN_12V_2_PIN, PG_12V_2_PIN, ILM_12V_2_PIN, "+12V 5A 2");
+PowerChannel Channel_12v_3(EN_12V_3_PIN, PG_12V_4_PIN, ILM_12V_3_PIN, "+12V 10A");
+
+static PowerChannel* channels[] = {&Channel_5v_1, &Channel_5v_2, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
+
+static PowerChannel* ems_dis_channels[] = {&Channel_5v_1, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
 
 void setup() {
   Serial.begin(115200);
   pinMode(PWR_STATUS_PIN, OUTPUT);
   pinMode(BAU, INPUT_PULLUP);
-  // pinMode(EN_12V_2_PIN, OUTPUT);
-  // digitalWrite(EN_12V_2_PIN, LOW);
-  // delay(1000);
-  // pinMode(EN_12V_2_PIN, INPUT);
 }
 
 unsigned long last_pwr_led_blink = 0;
 bool pwr_led_state = false;
-void update_pwr_led() {
+void update_pwr_led(bool ems) {
+  bool is_good = true;
+  for (size_t i = 0; i < sizeof(channels)/sizeof(PowerChannel*); i++) {
+    is_good &= channels[i]->is_good();
+  }
   if (!digitalRead(BAU)) {
-    digitalWrite(PWR_STATUS_PIN, !(Channel_5v_1.is_good()));
+    digitalWrite(PWR_STATUS_PIN, !is_good);
   } else if (every_ms(&last_pwr_led_blink, 200)) {
     digitalWrite(PWR_STATUS_PIN, pwr_led_state);
     pwr_led_state = !pwr_led_state;
@@ -159,15 +166,17 @@ void update_pwr_led() {
 }
 
 
-void update_ems() {
+bool update_ems() {
   if (digitalRead(BAU)) {
     for (size_t i = 0; i < sizeof(ems_dis_channels)/sizeof(PowerChannel*); i++) {
-      Channel_5v_1.trigger_EMS();
+      ems_dis_channels[i]->trigger_EMS();
     }
+    return true;
   } else {
     for (size_t i = 0; i < sizeof(ems_dis_channels)/sizeof(PowerChannel*); i++) {
-      Channel_5v_1.release_EMS();
+      ems_dis_channels[i]->release_EMS();
     }
+    return false;
   }
 }
 
@@ -176,10 +185,12 @@ unsigned long last_serial_update = 0;
 
 void loop() {
   if (every_ms(&last_pwr_led_update, 10)) {
-    update_pwr_led();
-    update_ems();
+    update_pwr_led(update_ems());
   }
   if (every_ms(&last_serial_update, 500)) {
-    Channel_5v_1.print_state();
+    Serial.println("channels status:");
+    for (size_t i = 0; i < sizeof(channels)/sizeof(PowerChannel*); i++) {
+      channels[i]->print_state();
+    }
   }
 }
