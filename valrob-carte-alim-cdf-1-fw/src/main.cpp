@@ -69,18 +69,20 @@ public:
 
   void trigger_EMS() {
     m_ems = true;
-    disable();
+    pinMode(m_en_pin, OUTPUT);
+    digitalWrite(m_en_pin, LOW);
   };
   void release_EMS() {
     m_ems = false;
-    if (m_mcu_low) {
-      enable();
+    if (!m_mcu_low) {
+      pinMode(m_en_pin, INPUT);
+    } else {
+      pinMode(m_en_pin, INPUT);
     }
   };
 
   void disable() {
     pinMode(m_en_pin, OUTPUT);
-    digitalWrite(m_en_pin, LOW);
     m_mcu_low = true;
     digitalWrite(m_en_pin, LOW);
   };
