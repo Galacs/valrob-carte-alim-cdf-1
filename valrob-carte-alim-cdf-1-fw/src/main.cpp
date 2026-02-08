@@ -79,7 +79,6 @@ public:
   };
 
   void disable() {
-    if (m_ems) return;
     pinMode(m_en_pin, OUTPUT);
     digitalWrite(m_en_pin, LOW);
     m_mcu_low = true;
@@ -87,6 +86,7 @@ public:
   };
 
   void enable() {
+    if (m_ems) return;
     pinMode(m_en_pin, INPUT);
     m_mcu_low = false;
   };
@@ -131,14 +131,36 @@ PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
 void setup() {
   Serial.begin(115200);
   pinMode(PWR_STATUS_PIN, OUTPUT);
+  pinMode(BAU, INPUT_PULLUP);
   // pinMode(EN_12V_2_PIN, OUTPUT);
   // digitalWrite(EN_12V_2_PIN, LOW);
   // delay(1000);
   // pinMode(EN_12V_2_PIN, INPUT);
 }
 
+unsigned long last_pwr_led_blink = 0;
+bool pwr_led_state = false;
 void update_pwr_led() {
-  digitalWrite(PWR_STATUS_PIN, !(Channel_5v_1.is_good()));
+  if (!digitalRead(BAU)) {
+    digitalWrite(PWR_STATUS_PIN, !(Channel_5v_1.is_good()));
+  } else if (every_ms(&last_pwr_led_blink, 200)) {
+    digitalWrite(PWR_STATUS_PIN, pwr_led_state);
+    pwr_led_state = !pwr_led_state;
+  }
+}
+
+static const PowerChannel* ems_channels[] = {&Channel_5v_1};
+
+void update_ems() {
+  if (digitalRead(BAU)) {
+    for (size_t i = 0; i < sizeof(ems_channels)/sizeof(PowerChannel*); i++) {
+      Channel_5v_1.trigger_EMS();
+    }
+  } else {
+    for (size_t i = 0; i < sizeof(ems_channels)/sizeof(PowerChannel*); i++) {
+      Channel_5v_1.release_EMS();
+    }
+  }
 }
 
 unsigned long last_pwr_led_update = 0;
@@ -147,6 +169,7 @@ unsigned long last_serial_update = 0;
 void loop() {
   if (every_ms(&last_pwr_led_update, 10)) {
     update_pwr_led();
+    update_ems();
   }
   if (every_ms(&last_serial_update, 500)) {
     Channel_5v_1.print_state();
