@@ -37,6 +37,14 @@
 #define PG_12V_3_PIN 18
 #define PG_12V_4_PIN 16
 
+bool every_ms(unsigned long* last_run, unsigned long time) {
+  if (millis() > *last_run + time) {
+    *last_run = millis();
+    return true;
+  }
+  return false;
+}
+
 enum class power_channel_state_t: uint8_t {
   GOOD,
   OVERRIDE,
@@ -94,7 +102,11 @@ public:
 
   void print_state() {
     const static String states[] = {"GOOD", "OVERRIDE", "EMS", "FAULT", "OFF"};
-    Serial.printf("%s: %s\n", m_channel_name, states[(uint8_t) get_state()]);
+    Serial.printf("%s: %s, I: ..A\n", m_channel_name, states[(uint8_t) get_state()]);
+  }
+
+  bool is_good() {
+    return get_state() != power_channel_state_t::FAULT;
   }
 
 private:
@@ -114,31 +126,29 @@ float get_batt_volotage() {
   return 0.0;
 }
 
-void update_pwr_led() {
-
-}
-
 PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
 
 void setup() {
   Serial.begin(115200);
-  // pinMode(PWR_STATUS_PIN, OUTPUT);
+  pinMode(PWR_STATUS_PIN, OUTPUT);
   // pinMode(EN_12V_2_PIN, OUTPUT);
   // digitalWrite(EN_12V_2_PIN, LOW);
   // delay(1000);
   // pinMode(EN_12V_2_PIN, INPUT);
 }
 
-void loop() {
-  Channel_5v_1.print_state();
-  delay(500);
-  // digitalWrite(PWR_STATUS_PIN, HIGH);
-  // delay(200);
-  // digitalWrite(PWR_STATUS_PIN, LOW);
-  // delay(200);
+void update_pwr_led() {
+  digitalWrite(PWR_STATUS_PIN, !(Channel_5v_1.is_good()));
+}
 
-  // Channel_5v_1.disable();
-  // delay(1000);
-  // Channel_5v_1.enable();
-  // delay(1000);
+unsigned long last_pwr_led_update = 0;
+unsigned long last_serial_update = 0;
+
+void loop() {
+  if (every_ms(&last_pwr_led_update, 10)) {
+    update_pwr_led();
+  }
+  if (every_ms(&last_serial_update, 500)) {
+    Channel_5v_1.print_state();
+  }
 }
