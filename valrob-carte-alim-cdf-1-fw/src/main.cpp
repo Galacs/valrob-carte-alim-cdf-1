@@ -62,6 +62,7 @@ public:
     pinMode(m_en_pin, INPUT);
     pinMode(m_pg_pin, INPUT);
     pinMode(m_ilm_pin, INPUT);
+    analogSetAttenuation(adc_attenuation_t::ADC_0db);
     if (enabled) {
       enable();
     }
@@ -102,9 +103,13 @@ public:
     return power_channel_state_t::GOOD;
   }
 
+  float get_current() {
+    return (analogReadMilliVolts(m_ilm_pin)/1000)/645*182;
+  }
+
   void print_state() {
     const static String states[] = {"GOOD", "OVERRIDE", "EMS", "FAULT", "OFF"};
-    Serial.printf("%s: %s, I: ..A\n", m_channel_name, states[(uint8_t) get_state()]);
+    Serial.printf("%s: %s, I: %fA\n", m_channel_name, states[(uint8_t) get_state()], get_current());
   }
 
   bool is_good() {
@@ -130,6 +135,8 @@ float get_batt_volotage() {
 
 PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
 
+static const PowerChannel* ems_dis_channels[] = {&Channel_5v_1};
+
 void setup() {
   Serial.begin(115200);
   pinMode(PWR_STATUS_PIN, OUTPUT);
@@ -151,15 +158,14 @@ void update_pwr_led() {
   }
 }
 
-static const PowerChannel* ems_channels[] = {&Channel_5v_1};
 
 void update_ems() {
   if (digitalRead(BAU)) {
-    for (size_t i = 0; i < sizeof(ems_channels)/sizeof(PowerChannel*); i++) {
+    for (size_t i = 0; i < sizeof(ems_dis_channels)/sizeof(PowerChannel*); i++) {
       Channel_5v_1.trigger_EMS();
     }
   } else {
-    for (size_t i = 0; i < sizeof(ems_channels)/sizeof(PowerChannel*); i++) {
+    for (size_t i = 0; i < sizeof(ems_dis_channels)/sizeof(PowerChannel*); i++) {
       Channel_5v_1.release_EMS();
     }
   }
