@@ -138,6 +138,17 @@ float get_batt_volotage() {
   return 0.0;
 }
 
+PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
+PowerChannel Channel_5v_2(EN_5V_2_PIN, PG_5V_2_PIN, ILM_5V_2_PIN, "+5V 5A 2");
+
+PowerChannel Channel_12v_1(EN_12V_1_PIN, PG_12V_1_PIN, ILM_12V_1_PIN, "+12V 5A 1");
+PowerChannel Channel_12v_2(EN_12V_2_PIN, PG_12V_2_PIN, ILM_12V_2_PIN, "+12V 5A 2");
+PowerChannel Channel_12v_3(EN_12V_3_PIN, PG_12V_4_PIN, ILM_12V_3_PIN, "+12V 10A");
+
+static PowerChannel* channels[] = {&Channel_5v_1, &Channel_5v_2, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
+
+static PowerChannel* ems_dis_channels[] = {&Channel_5v_1, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
+
 Commander command = Commander(Serial);
 
 uint ctouint(char c) {
@@ -159,17 +170,6 @@ void doEnableChannel(char* cmd) {
     Serial.printf("Enabled %s\n", channels[channel]->get_name());
   }
 }
-
-PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
-PowerChannel Channel_5v_2(EN_5V_2_PIN, PG_5V_2_PIN, ILM_5V_2_PIN, "+5V 5A 2");
-
-PowerChannel Channel_12v_1(EN_12V_1_PIN, PG_12V_1_PIN, ILM_12V_1_PIN, "+12V 5A 1");
-PowerChannel Channel_12v_2(EN_12V_2_PIN, PG_12V_2_PIN, ILM_12V_2_PIN, "+12V 5A 2");
-PowerChannel Channel_12v_3(EN_12V_3_PIN, PG_12V_4_PIN, ILM_12V_3_PIN, "+12V 10A");
-
-static PowerChannel* channels[] = {&Channel_5v_1, &Channel_5v_2, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
-
-static PowerChannel* ems_dis_channels[] = {&Channel_5v_1, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
 
 void setup() {
   Serial.begin(115200);
