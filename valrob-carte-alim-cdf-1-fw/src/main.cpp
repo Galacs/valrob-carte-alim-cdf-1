@@ -108,6 +108,10 @@ public:
     return (analogReadMilliVolts(m_ilm_pin)/1000)/645*182;
   }
 
+  String get_name() {
+    return m_channel_name;
+  }
+
   void print_state() {
     const static String states[] = {"GOOD", "OVERRIDE", "EMS", "FAULT", "OFF"};
     Serial.printf("%s: %s, I: %fA\n", m_channel_name, states[(uint8_t) get_state()], get_current());
@@ -134,6 +138,28 @@ float get_batt_volotage() {
   return 0.0;
 }
 
+Commander command = Commander(Serial);
+
+uint ctouint(char c) {
+  return c - '0';
+}
+
+void doDisableChannel(char* cmd) {
+  uint channel = ctouint(cmd[0]);
+  if (channel >= 1 && channel <= 5) {
+    channels[channel]->disable();
+    Serial.printf("Disabled %s\n", channels[channel]->get_name());
+  }
+}
+
+void doEnableChannel(char* cmd) {
+  uint channel = ctouint(cmd[0]);
+  if (channel >= 1 && channel <= 5) {
+    channels[channel]->enable();
+    Serial.printf("Enabled %s\n", channels[channel]->get_name());
+  }
+}
+
 PowerChannel Channel_5v_1(EN_5V_1_PIN, PG_5V_1_PIN, ILM_5V_1_PIN, "+5V 5A 1");
 PowerChannel Channel_5v_2(EN_5V_2_PIN, PG_5V_2_PIN, ILM_5V_2_PIN, "+5V 5A 2");
 
@@ -149,6 +175,9 @@ void setup() {
   Serial.begin(115200);
   pinMode(PWR_STATUS_PIN, OUTPUT);
   pinMode(BAU, INPUT_PULLUP);
+
+  command.add('E', doEnableChannel);
+  command.add('D', doDisableChannel);
 }
 
 unsigned long last_pwr_led_blink = 0;
@@ -194,4 +223,5 @@ void loop() {
       channels[i]->print_state();
     }
   }
+  command.run();
 }
