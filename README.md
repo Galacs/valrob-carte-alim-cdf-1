@@ -23,6 +23,7 @@ The repo also contains minimal firmware for the ESP32 MCU.
 ## Pictures
 
 <img width="789" height="620" alt="image" src="https://github.com/user-attachments/assets/1e1b0164-3981-4202-98f2-d2320f10b931" />
+<img width="783" height="401" alt="image" src="https://github.com/user-attachments/assets/464a9598-f2b2-460d-ae0c-b9703c5c5c7b" />
 
 ## Pin definitions
 
