@@ -1,6 +1,6 @@
 # Carte alim CDF 1
 
-ESP32-S3-WROOM-1 5v 10A and 12v 10A six efuse protected with current and state monitoring channels power supply boards 
+ESP32-S3-WROOM-1 5v 10A and 12v 10A six efuse protected with current and state monitoring channels power supply boards
 
 The repo also contains minimal firmware for the ESP32 MCU.
 
@@ -14,9 +14,15 @@ The repo also contains minimal firmware for the ESP32 MCU.
 
 ## Top preview
 
+<img width="1442" height="889" alt="image" src="https://github.com/user-attachments/assets/240b7374-7bf0-434e-bc94-6a6fb16c603f" />
 
 ## Preview 3d render
 
+<img width="1089" height="712" alt="image" src="https://github.com/user-attachments/assets/0eaaf551-2ad2-455c-94fd-44c4c71718e6" />
+
+## Pictures
+
+<img width="789" height="620" alt="image" src="https://github.com/user-attachments/assets/1e1b0164-3981-4202-98f2-d2320f10b931" />
 
 ## Pin definitions
 
