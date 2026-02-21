@@ -7,7 +7,7 @@
 	(title_block
 		(title "Carte alim CDF 1")
 		(date "2026-01-15")
-		(rev "01")
+		(rev "02")
 		(company "Valrobotik")
 	)
 	(lib_symbols

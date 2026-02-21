@@ -10,7 +10,7 @@
 	(title_block
 		(title "Carte alim CDF 1")
 		(date "2026-01-17")
-		(rev "01")
+		(rev "02")
 		(company "Valrobotik")
 	)
 	(layers
@@ -49294,7 +49294,7 @@
 		(layer "Edge.Cuts")
 		(uuid "f816e2dd-e95f-4016-b0fc-64f0a594e20a")
 	)
-	(gr_text "Rev 01"
+	(gr_text "Rev 02"
 		(at 115.25 78.75 90)
 		(layer "F.SilkS")
 		(uuid "0413b5a0-8831-481f-8541-7000394664f7")
