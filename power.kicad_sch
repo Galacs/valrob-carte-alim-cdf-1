@@ -8268,7 +8268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRP1050WA"
 			(at 161.29 123.19 0)
 			(effects
 				(font
@@ -8304,7 +8304,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C41407183"
+		(property "JLCPCB Part #" "C149541"
 			(at 161.29 123.19 90)
 			(effects
 				(font
@@ -8313,7 +8313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "dehongganying"
+		(property "Manufacturer" "SXN(Shun Xiang Nuo Elec) "
 			(at 161.29 123.19 90)
 			(effects
 				(font
@@ -8322,7 +8322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "DH1040H-5R6M"
+		(property "Manufacturer Part Number" "SMMS1050-5R6M"
 			(at 161.29 123.19 90)
 			(effects
 				(font
@@ -11055,7 +11055,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRP1050WA"
 			(at 161.29 77.47 0)
 			(effects
 				(font
@@ -11091,7 +11091,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C41407183"
+		(property "JLCPCB Part #" "C149541"
 			(at 161.29 77.47 90)
 			(effects
 				(font
@@ -11100,7 +11100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "dehongganying"
+		(property "Manufacturer" "SXN(Shun Xiang Nuo Elec) "
 			(at 161.29 77.47 90)
 			(effects
 				(font
@@ -11109,7 +11109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "DH1040H-5R6M"
+		(property "Manufacturer Part Number" "SMMS1050-5R6M"
 			(at 161.29 77.47 90)
 			(effects
 				(font
