@@ -147,7 +147,7 @@ PowerChannel Channel_12v_3(EN_12V_3_PIN, PG_12V_4_PIN, ILM_12V_3_PIN, "+12V 10A"
 
 static PowerChannel* channels[] = {&Channel_5v_1, &Channel_5v_2, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
 
-static PowerChannel* ems_dis_channels[] = {&Channel_5v_1, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
+static PowerChannel* ems_dis_channels[] = {&Channel_5v_1, &Channel_5v_2, &Channel_12v_1, &Channel_12v_2, &Channel_12v_3};
 
 Commander command = Commander(Serial);
 
