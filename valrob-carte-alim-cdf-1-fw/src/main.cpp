@@ -59,7 +59,8 @@ public:
   PowerChannel(int en_pin, int pg_pin, int ilm_pin, String channel_name,
                bool enabled = true, float ilim = -1)
       : m_en_pin(en_pin), m_pg_pin(pg_pin), m_ilm_pin(ilm_pin),
-        m_channel_name(channel_name), m_mcu_low(!enabled), m_soft_Ilim(ilim) {
+        m_channel_name(channel_name), m_mcu_low(!enabled), m_soft_Ilim(ilim),
+        m_last_good(0) {
     pinMode(m_en_pin, INPUT);
     pinMode(m_pg_pin, INPUT);
     pinMode(m_ilm_pin, INPUT);
@@ -100,7 +101,10 @@ public:
     if (m_mcu_low) return power_channel_state_t::OFF;
     if (m_ems) return power_channel_state_t::EMS;
     if (!m_mcu_low && !digitalRead(m_en_pin)) return power_channel_state_t::OVERRIDE;
+    if (!m_mcu_low && digitalRead(m_en_pin) && !digitalRead(m_pg_pin) && millis() - m_last_good < 150)
+      return power_channel_state_t::GOOD;
     if (!m_mcu_low && digitalRead(m_en_pin) && !digitalRead(m_pg_pin)) return power_channel_state_t::FAULT;
+    m_last_good = millis();
     return power_channel_state_t::GOOD;
   }
 
@@ -132,6 +136,7 @@ private:
   bool m_ems = false;
   float m_current;
   float m_soft_Ilim;
+  unsigned int m_last_good;
 };
 
 float get_batt_volotage() {
